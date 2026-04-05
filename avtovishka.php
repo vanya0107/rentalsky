@@ -45,11 +45,13 @@ $catalogSlider = $car['catalogSlider'];
                 <div class="rs-avtovishka__slider-big swiper" data-slider="avtovishka" data-popup-imgs>
                     <div class="swiper-wrapper">
                         <?php
-                        foreach ($car['sliderImg'] as $slide) {
-                            echo '<div class="rs-avtovishka__slider-big_item swiper-slide">';
-                            echo '<img src="' . $slide['big'] . '" alt="' . $slide['alt'] . '" data-popup-img-src>';
-                            echo '</div>';
-                        }
+                            foreach ($car['sliderImg'] as $index => $slide) {
+                                $fetchPriority = $index === 0 ? ' fetchpriority="high"' : '';
+
+                                echo '<div class="rs-avtovishka__slider-big_item swiper-slide">';
+                                echo '<img src="' . $slide['big'] . '" alt="' . $slide['alt'] . '"' . $fetchPriority . ' data-popup-img-src>';
+                                echo '</div>';
+                            }
                         ?>
                     </div>
                     <div class="swiper-button-next"></div>

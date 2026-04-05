@@ -1,7 +1,7 @@
 .rs-faq {
 	margin-top: 30px;
 	&__item {
-		margin-bottom: 25px;
+		margin-bottom: 15px;
 		&:last-child {
 			margin-bottom: 0;
 		}
@@ -19,7 +19,7 @@
 	}
 	&__question {
 		position: relative;
-		font-size: 22px;
+		font-size: 20px;
 		cursor: pointer;
 		padding-left: 30px;
 		&::before {
@@ -39,22 +39,22 @@
 	}
 	&__answer {
 		padding-top: 10px;
-		font-size: 18px;
+		font-size: 16px;
 		max-height: 0;
 		overflow: hidden;
 		transition: max-height .3s;
 	}
 }
-@media(max-width: 1024px) {
+@media(min-width: 1024px) {
 	.rs-faq {
 		&__item {
-			margin-bottom: 15px;
+			margin-bottom: 25px;
 		}
 		&__question {
-			font-size: 20px;
+			font-size: 22px;
 		}
 		&__answer {
-			font-size: 16px;
+			font-size: 18px;
 		}
 	}
 }

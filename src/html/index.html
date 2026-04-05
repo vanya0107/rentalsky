@@ -2,7 +2,11 @@
     <body>
         <!--=include template/header.html-->
         <main>
-            <div class="rs-hero rs-hero--index" style="background-image: url(img/hero/index.jpg)">
+            <div class="rs-hero rs-hero--index">
+                <picture class="rs-hero__bg">
+                    <source srcset="img/hero/index-mobile.webp" media="(max-width: 700px)">
+                    <img src="img/hero/index.webp" alt="background image h1 block on index page" width="1920" height="864">
+                </picture>
                 <div class="rs-hero__wrap rs-container">
                     <h1 class="rs-hero__title">Аренда автовышки <br> в Минске и Беларуси</h1>
                     <p class="rs-hero__subtitle">Эксперты в подъеме на высоту</p>
@@ -115,7 +119,7 @@
                     </div>
                     <div class="rs-content-img-right__img">
                         <div class="rs-content-img-right__img_bg">
-                            <img src="img/content-img-right/1.jpg" alt="">
+                            <img src="img/content-img-right/1.jpg" alt="" width="500" height="648">
                         </div>
                     </div>
                 </div>

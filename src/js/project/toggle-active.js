@@ -3,15 +3,10 @@ if(allBtnToggle) {
     allBtnToggle.forEach(btn => {
         btn.addEventListener('click', function(e) {
             e.preventDefault();
-            this.classList.toggle('active');
-            const dataBtn = this.dataset.toggleActive;
-            if(this.closest(dataBtn)) {
-                this.closest(dataBtn).classList.toggle('active');
-            } else if(this.parentNode.querySelector(dataBtn)) {
-                this.parentNode.querySelector(dataBtn).classList.toggle('active');
-            } else {
-                document.querySelector(dataBtn).classList.toggle('active');
-            }
+            btn.classList.toggle('active');
+            const dataBtn = btn.dataset.toggleActive;
+            const target = btn.closest(dataBtn) || btn.parentNode.querySelector(dataBtn) || document.querySelector(dataBtn);
+            if(target) target.classList.toggle('active');
         });
     });
 }

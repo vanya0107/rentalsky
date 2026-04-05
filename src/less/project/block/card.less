@@ -27,11 +27,6 @@
 			object-fit: cover;
 			transition: 1s;
 		}
-		&:hover {
-			& img {
-				scale: 1.1;
-			}
-		}
 	}
 	&__info {
 		display: flex;
@@ -54,7 +49,7 @@
 		flex: 1 1 auto;
 		margin-top: 17px;
 		padding-bottom: 17px;
-		font-size: 20px;
+		font-size: 16px;
 		font-weight: 700;
 		border-bottom: 2px solid var(--color-orange-33);
 		&>* {
@@ -72,10 +67,21 @@
 		font-size: 14px;
 	}
 }
-@media(max-width: 1024px) {
+@media(hover: hover) {
+	.rs-card {
+		&__img {
+			&:hover {
+				& img {
+					scale: 1.1;
+				}
+			}
+		}
+	}
+}
+@media(min-width: 1024px) {
 	.rs-card {
 		&__name {
-			font-size: 16px;
+			font-size: 20px;
 		}
 	}
 }

@@ -1,17 +1,17 @@
 .rs-block-about__advantages {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	flex-wrap: wrap;
 	border: 4px solid var(--color-orange-33);
-	padding-top: 27px;
+	padding-top: 20px;
 	&_item {
 		min-width: 300px;
-		padding-left: 43px;
-		padding-right: 43px;
-		margin-bottom: 27px;
+		padding-left: 30px;
+		padding-right: 30px;
+		margin-bottom: 20px;
 	}
 	&_value {
-		font-size: 96px;
+		font-size: 70px;
 		color: var(--color-orange-33);
 		font-weight: 700;
 		margin-bottom: 10px;
@@ -20,22 +20,32 @@
 		}
 	}
 	&_year {
-		font-size: 24px;
 		font-weight: 700;
-		margin-bottom: 16px;
+		font-size: 20px;
+		margin-bottom: 10px;
 	}
 	&_desc {
-		font-size: 18px;
+		font-size: 16px;
 	}
 }
 .rs-block-about__review {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	&_video {
-		flex: 0 0 460px;
+		order: 2;
+		position: relative;
+		padding-top: 57%;
+		height: auto;
+		flex: 0 1 460px;
 		width: 460px;
-		height: 285px;
 		background: var(--color-gray-d9);
 		& video {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
@@ -43,10 +53,10 @@
 		}
 	}
 	&_desc {
-		flex: 1 1 auto;
-		margin-left: 63px;
+		flex: 0 0 100%;
+		margin-bottom: 30px;
 		&>* {
-			margin-bottom: 22px;
+			margin-bottom: 16px;
 			&:last-child {
 				margin-bottom: 0;
 			}
@@ -57,55 +67,50 @@
 		}
 	}
 }
-@media(max-width: 1024px) {
+@media(min-width: 1024px) {
 	.rs-block-about__advantages {
-		padding-top: 20px;
-		justify-content: flex-start;
+		justify-content: space-between;
+		padding-top: 27px;
 		&_item {
-			padding-left: 30px;
-			padding-right: 30px;
-			margin-bottom: 20px;
+			padding-left: 43px;
+			padding-right: 43px;
+			margin-bottom: 27px;
 		}
 		&_value {
-			font-size: 70px;
+			font-size: 96px;
 		}
 		&_year {
-			font-size: 20px;
-			margin-bottom: 10px;
+			font-size: 24px;
+			margin-bottom: 16px;
 		}
 		&_desc {
-			font-size: 16px;
+			font-size: 18px;
 		}
 	}
 	.rs-block-about__review {
-		flex-wrap: wrap;
-		justify-content: center;
+		flex-wrap: nowrap;
+		justify-content: space-between;
 		&_video {
-			order: 2;
-			flex: 0 1 460px;
+			order: 0;
+			flex: 0 0 460px;
 		}
 		&_desc {
-			flex:  0 0 100%;
-			margin-left: 0;
-			margin-bottom: 30px;
+			flex: 1 1 auto;
+			margin-left: 63px;
+			margin-bottom: 0;
 			&>* {
-				margin-bottom: 16px;
+				margin-bottom: 22px;
 			}
 		}
 	}
 }
-@media(max-width: 640px) {
+@media(min-width: 640px) {
 	.rs-block-about__review {
 		&_video {
-			position: relative;
-			padding-top: 57%;
-			height: auto;
+			padding-top: 0;
+			height: 285px;
 			& video {
-				position: absolute;
-				top: 0;
-				left: 0;
-				bottom: 0;
-				right: 0;
+				position: static;
 			}
 		}
 	}

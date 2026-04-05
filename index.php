@@ -20,7 +20,11 @@
     include('template/header.php');
 ?>
 <main>
-    <div class="rs-hero rs-hero--index" style="background-image: url(img/hero/index.jpg)">
+    <div class="rs-hero rs-hero--index">
+        <picture class="rs-hero__bg">
+            <source srcset="img/hero/index-mobile.webp" media="(max-width: 700px)">
+            <img src="img/hero/index.webp" alt="background image h1 block on index page" width="1920" height="864" fetchpriority="high">
+        </picture>
         <div class="rs-hero__wrap rs-container">
             <h1 class="rs-hero__title">Аренда автовышки <br> в Минске и Беларуси</h1>
             <p class="rs-hero__subtitle">Эксперты в подъеме на высоту</p>
@@ -78,7 +82,7 @@
             </div>
             <div class="rs-content-img-right__img">
                 <div class="rs-content-img-right__img_bg">
-                    <img src="img/content-img-right/1.jpg" alt="" loading="lazy">
+                    <img src="img/content-img-right/1.jpg" alt="Аренда автовышки для высотных работ" loading="lazy" width="500" height="648">
                 </div>
             </div>
         </div>

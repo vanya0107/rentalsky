@@ -20,6 +20,7 @@
 		"gulp-include": "latest",
 		"gulp-less": "latest",
 		"gulp-uglify": "latest",
-		"less-plugin-autoprefix": "latest"
+		"less-plugin-autoprefix": "latest",
+		"ttf2woff2": "^8.0.1"
 	}
 }

@@ -16,7 +16,11 @@
     include('template/header.php');
 ?>
 <main>
-    <div class="rs-hero" style="background-image: url(img/hero/about.jpg)">
+    <div class="rs-hero">
+        <picture class="rs-hero__bg">
+            <source srcset="img/hero/about-mobile.webp" media="(max-width: 700px)">
+            <img src="img/hero/about.webp" alt="background image h1 block on about page" width="1920" height="200">
+        </picture>
         <div class="rs-hero__wrap rs-container">
             <h1 class="rs-hero__title">О нас</h1>
         </div>

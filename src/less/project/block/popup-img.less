@@ -91,6 +91,7 @@
 			&.prev {
 				left: 0;
 				&::before {
+					left: 20px;
 					border-left: 2px solid var(--color-white);
 					transform: rotate(45deg);
 				}
@@ -98,6 +99,7 @@
 			&.next {
 				right: 0;
 				&::before {
+					right: 20px;
 					border-right: 2px solid var(--color-white);
 					transform: rotate(-45deg);
 				}
@@ -115,27 +117,25 @@
 				cursor: pointer;
 				&:hover {
 					opacity: 1;
+					width: 12px;
+					height: 12px;
 				}
 			}
 		}
 	}
 }
-@media(max-width: 768px) {
+@media(min-width: 768px) {
 	.rs-popup-img {
 		&__slider {
 			&_arrow {
-				&:hover {
-					width: 12px;
-					height: 12px;
-				}
 				&.prev {
 					&::before {
-						left: 20px;
+						left: auto;
 					}
 				}
 				&.next {
 					&::before {
-						right: 20px;
+						right: auto;
 					}
 				}
 			}

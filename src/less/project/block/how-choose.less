@@ -5,6 +5,10 @@
 	justify-content: flex-start;
 	gap: 19px;
 	margin-top: 36px;
+	margin-left: -20px;
+	margin-right: -20px;
+	padding-left: 20px;
+	padding-right: 20px;
 	overflow: auto;
 	counter-reset: howChoose;
 	&::-webkit-scrollbar {
@@ -57,11 +61,11 @@
 		}
 	}
 }
-@media(max-width: 1024px) {
+@media(min-width: 1024px) {
 	.rs-how-choose {
-		margin-left: -20px;
-		margin-right: -20px;
-		padding-left: 20px;
-		padding-right: 20px;
+		margin-left: 0;
+		margin-right: 0;
+		padding-left: 0;
+		padding-right: 0;
 	}
 }

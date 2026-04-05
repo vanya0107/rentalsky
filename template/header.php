@@ -2,11 +2,11 @@
     <div class="rs-header__wrap rs-container">
         <?php if(isset($page) && $page == 'index') { ?>
             <p class="rs-header__logo">
-                <img src="img/logo-header.svg" alt="РенталСкай — аренда автовышек в Минске">
+                <img src="img/logo-header.svg" alt="РенталСкай — аренда автовышек в Минске" width="194" height="32">
             </p>
         <?php } else { ?>
             <a href="/" class="rs-header__logo">
-                <img src="img/logo-header.svg" alt="РенталСкай — аренда автовышек в Минске">
+                <img src="img/logo-header.svg" alt="РенталСкай — аренда автовышек в Минске" width="194" height="32">
             </a>
         <?php } ?>
         <nav class="rs-header__menu">
