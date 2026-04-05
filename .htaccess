@@ -1,0 +1,85 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+
+####################################
+# 1) Редирект на HTTPS
+####################################
+RewriteCond %{HTTPS} =off
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+####################################
+# 2) Редирект со старого кодированного домена на основной
+####################################
+RewriteCond %{HTTP_HOST} ^xn\-\-\-\-7sbbahaqhyt1bf5av6g1b\.xn\-\-90ais$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^www\.xn\-\-\-\-7sbbahaqhyt1bf5av6g1b\.xn\-\-90ais$ [NC]
+RewriteRule ^(.*)$ https://rentalsky.by/$1 [R=301,L]
+
+####################################
+# 3) Редиректы старых страниц автовышек (301)
+####################################
+Redirect 301 /avtovishka22m.php /avtovishka-22m-zil
+Redirect 301 /avtovishka26m.php /avtovishka-25m-renault
+Redirect 301 /avtovishka28m.php /avtovishka-28m-maz
+Redirect 301 /avtovishka30m.php /avtovishka-30m-maz
+Redirect 301 /avtovishka45m.php /avtovishka-45m-mercedes
+Redirect 301 /avtovishka_12Dong /avtovishka-12m-dongfeng
+Redirect 301 /avtovishka_18Renault /avtovishka-18m-renault
+Redirect 301 /avtovishka_22Zil /avtovishka-22m-zil
+Redirect 301 /avtovishka_25Renault /avtovishka-25m-renault
+Redirect 301 /avtovishka_28Maz /avtovishka-28m-maz
+Redirect 301 /avtovishka_28Iveco /avtovishka-28m-iveco
+Redirect 301 /avtovishka_30Maz /avtovishka-30m-maz
+Redirect 301 /avtovishka_40Mercedes /avtovishka-40m-mercedes
+Redirect 301 /avtovishka_45Mercedes /avtovishka-45m-mercedes
+
+####################################
+# 4) Редиректы about.php и contacts.php на красивые URL
+####################################
+RewriteCond %{THE_REQUEST} /about\.php [NC]
+RewriteRule ^about\.php$ /about [R=301,L]
+
+RewriteCond %{THE_REQUEST} /contacts\.php [NC]
+RewriteRule ^contacts\.php$ /contacts [R=301,L]
+
+####################################
+# 5) Убираем .php для всех остальных страниц
+####################################
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^([a-zA-Z0-9_-]+)/?$ $1.php [L,QSA]
+
+####################################
+# 6) Красивые URL для автовышек через slug
+####################################
+RewriteRule ^avtovishka-([a-zA-Z0-9-]+)/?$ avtovishka.php?slug=$1 [L,QSA]
+
+####################################
+# 7) 404 — отдаём внутреннюю страницу
+####################################
+ErrorDocument 404 /404.php
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+
+    # Картинки
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+
+    # CSS и JS
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+
+    # Шрифты
+    ExpiresByType font/ttf "access plus 1 year"
+
+</IfModule>
+
+<IfModule mod_headers.c>
+    <FilesMatch "\.(js|css|png|jpg|jpeg|webp|svg|woff|woff2)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+</IfModule>

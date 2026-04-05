@@ -1,0 +1,254 @@
+.rs-avtovishka {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 36px;
+	margin-top: 38px;
+	&__sliders {
+		flex: 0 0 57%;
+		width: 57%;
+	}
+	&__slider-big {
+		margin-bottom: 18px;
+		&_item {
+			height: 468px;
+			& img {
+				width: 100%;
+				height: 100%;
+				object-position: center;
+				object-fit: cover;
+				border-radius: 10px;
+				cursor: pointer;
+			}
+		}
+		& .swiper-button {
+			&-next, &-prev {
+				width: 30px;
+				height: 30px;
+				border-radius: 50%;
+				background: var(--color-gray-f2);
+				transition: .3s;
+				&::after {
+					font-size: 16px;
+					font-weight: 700;
+					color: rgba(0, 0, 0, .43);
+				}
+				&:hover {
+					opacity: 1;
+				}
+				&.swiper-button-disabled {
+					pointer-events: initial;
+					&:hover {
+						opacity: .35;
+					}
+				}
+			}
+		}
+	}
+	&__slider-small {
+		&_item {
+			height: 101px;
+			opacity: 0.7;
+			cursor: pointer;
+			transition: .3s;
+			&:hover {
+				opacity: 1;
+			}
+			& img {
+				width: 100%;
+				height: 100%;
+				object-position: center;
+				object-fit: cover;
+				border-radius: 5px;
+			}
+			&.swiper-slide-thumb-active {
+				opacity: 1;
+			}
+		}
+	}
+	&__graph {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 24px;
+		border-radius: 10px;
+		background: var(--color-gray-f2);
+		border: 1px solid var(--color-black);
+		transition: .5s;
+		&_price {
+			padding: 10px 24px;
+			border: 1px solid var(--color-black);
+			margin-bottom: 18px;
+			background: var(--color-gray-f2);
+			border-radius: 10px;
+		}
+		&_wrap {
+			flex: 1 1 auto;
+			margin-left: 58px;
+		}
+		&.active {
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			background: var(--color-white);
+			margin-left: 0;
+			padding: 0;
+			z-index: 2;
+			& .rs-avtovishka__graph_title {
+				opacity: 0;
+				visibility: hidden;
+				height: 0;
+			}
+			& .rs-avtovishka__graph_img {
+				height: 100%;
+				flex: none;
+				max-height: 100%;
+				margin-top: 0;
+			}
+			& .rs-avtovishka__graph_btn {
+				display: none;
+			}
+			& .rs-avtovishka__graph_close {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+		&_title {
+			font-size: 20px;
+			font-weight: 700;
+			text-align: center;
+		}
+		&_img {
+			flex: 1 1 auto;
+			height: 366px;
+			width: 100%;
+			margin-top: 15px;
+			margin-bottom: 15px;
+			cursor: pointer;
+			& img {
+				width: 100%;
+				height: 100%;
+				object-position: center;
+				object-fit: contain;
+			}
+		}
+		&_btn {
+			height: 55px;
+			font-size: 16px;
+		}
+		&_close {
+			opacity: 0;
+			visibility: hidden;
+			position: absolute;
+			top: 18px;
+			right: 23px;
+			width: 32px;
+			height: 32px;
+			fill: var(--color-orange-33);
+			stroke: var(--color-white);
+			transition: .3s;
+			cursor: pointer;
+			&:hover {
+				fill: var(--color-black);
+			}
+			& svg {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+	&__table {
+		&_title {
+			font-size: 24px;
+			font-weight: 700;
+			margin-bottom: 25px;
+		}
+		&_table {
+			border: 1px solid var(--color-black);
+			border-collapse: collapse;
+			& td {
+				border: 1px solid var(--color-black);
+				width: 20%;
+				padding: 5px 10px;
+				font-weight: 500;
+			}
+		}
+	}
+}
+@media(max-width: 1024px) {
+	.rs-avtovishka {
+		display: block;
+		max-width: 685px;
+		width: 100%;
+		margin: 28px auto 46px;
+		&__sliders {
+			width: 100%;
+			margin-bottom: 40px;
+		}
+		&__slider-big {
+			margin-bottom: 12px;
+		}
+		&__slider-small {
+			&_item {
+				height: 80px;
+			}
+		}
+		&__graph {
+			padding: 16px;
+			&_wrap {
+				margin-left: 0;
+			}
+			&.active {
+				position: fixed;
+				background: var(--color-white);
+				z-index: 800;
+			}
+			&_title {
+				font-size: 18px;
+			}
+			&_img {
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+			&_btn {
+				height: 46px;
+				font-size: 14px;
+			}
+			&_close {
+				top: 14px;
+				right: 18px;
+				width: 26px;
+				height: 26px;
+			}
+		}
+		&__table {
+			&_title {
+				font-size: 20px;
+				margin-bottom: 15px;
+			}
+		}
+	}
+}
+@media(max-width: 640px) {
+	.rs-avtovishka {
+		&__slider-big {
+			&_item {
+				height: 368px;
+			}
+		}
+	}
+}
+@media(max-width: 540px) {
+	.rs-avtovishka {
+		&__graph {
+			&_img {
+				height: auto;
+			}
+		}
+	}
+}

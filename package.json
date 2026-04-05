@@ -1,0 +1,25 @@
+{
+	"name": "gulp-lesson",
+	"version": "1.0.0",
+	"description": "",
+	"main": "gulpfile.js",
+	"scripts": {
+		"gulp": "gulp",
+		"gulp-prod": "npm run gulp build -NODE_PROD=true"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"browser-sync": "^2.27.10",
+		"gulp": "latest",
+		"gulp-clean-css": "latest",
+		"gulp-concat": "latest",
+		"gulp-group-css-media-queries": "^1.2.2",
+		"gulp-imagemin": "latest",
+		"gulp-include": "latest",
+		"gulp-less": "latest",
+		"gulp-uglify": "latest",
+		"less-plugin-autoprefix": "latest"
+	}
+}

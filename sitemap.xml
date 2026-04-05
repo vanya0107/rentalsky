@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Главная -->
+    <url>
+        <loc>https://rentalsky.by/</loc>
+        <priority>1.0</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+
+    <!-- О компании -->
+    <url>
+        <loc>https://rentalsky.by/about</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+
+    <!-- Контакты -->
+    <url>
+        <loc>https://rentalsky.by/contacts</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+
+    <!-- Страницы автовышек -->
+    <url>
+        <loc>https://rentalsky.by/avtovishka-12m-dongfeng</loc>
+        <priority>0.9</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+
+    <url>
+        <loc>https://rentalsky.by/avtovishka-18m-renault</loc>
+        <priority>0.9</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+
+    <url>
+        <loc>https://rentalsky.by/avtovishka-22m-zil</loc>
+        <priority>0.9</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+
+    <url>
+        <loc>https://rentalsky.by/avtovishka-25m-renault</loc>
+        <priority>0.9</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+
+    <url>
+        <loc>https://rentalsky.by/avtovishka-28m-maz</loc>
+        <priority>0.9</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+
+    <url>
+        <loc>https://rentalsky.by/avtovishka-28m-iveco</loc>
+        <priority>0.9</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+
+    <url>
+        <loc>https://rentalsky.by/avtovishka-30m-maz</loc>
+        <priority>0.9</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+
+    <url>
+        <loc>https://rentalsky.by/avtovishka-40m-mercedes</loc>
+        <priority>0.9</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+
+    <url>
+        <loc>https://rentalsky.by/avtovishka-45m-mercedes</loc>
+        <priority>0.9</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+
+</urlset>

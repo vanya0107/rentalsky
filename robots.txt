@@ -1,0 +1,12 @@
+User-agent: *
+
+Disallow: /admin/
+Disallow: /private/
+Disallow: /mail/
+Disallow: /*?*utm_
+Disallow: /*?*yclid=
+Disallow: /*?*fbclid=
+
+Allow: /
+
+Sitemap: https://rentalsky.by/sitemap.xml

@@ -1,0 +1,53 @@
+:root {
+	--color-white: #FFFFFF;
+	--color-black: #000000;
+	--color-black-05: #050505;
+	--color-black-50: #505050;
+	--color-black-07: #070707;
+	--color-gray-f2: #F2F2F2;
+	--color-gray-5b: #5B5B5B;
+	--color-gray-d9: #D9D9D9;
+	--color-gray-f9: #F9F9F9;
+	--color-gray-ab: #ABABAB;
+	--color-gray-87: #878787;
+	--color-orange-33: #FF8833;
+	--color-orange-31: #F28131;
+	--color-blue-ff: #E7F2FF;
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	background-color: var(--color-white);
+	color: var(--color-black);
+	font-size: 18px;
+	line-height: 1.2;
+	font-family: 'Inter', 'Arial', sans-serif;
+	scroll-behavior: smooth;
+}
+img {
+	max-width: 100%;
+	max-height: 100%;
+	height: auto;
+	width: auto;
+}
+a {
+	text-decoration: none;
+	outline: none;
+	transition: .3s;
+}
+button, input {
+	outline: none;
+	border: none;
+	background-color: transparent;
+}
+ul, ol {
+	list-style: none;
+}
+@media(max-width: 1024px) {
+	html {
+		font-size: 16px;
+	}
+}

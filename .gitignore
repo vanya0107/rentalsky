@@ -1,0 +1,39 @@
+# Сборка
+build/
+
+# Зависимости
+node_modules/
+vendor/
+
+# IDE
+.idea/
+.vscode/
+*.sublime-*
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Логи и кэш
+*.log
+.cache/
+
+# Окружение (секреты, пароли)
+.env
+.env.local
+.env.*.local
+
+# Временные файлы
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Composer (если не используется vendor в репо)
+# composer.lock  # раскомментируй если не нужен
+
+#ai
+.qwen/
+

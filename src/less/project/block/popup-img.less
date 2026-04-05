@@ -1,0 +1,144 @@
+.rs-popup-img {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 99;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	padding: 10vh 10vw;
+	&.active {
+		display: flex;
+	}
+	&__overlay {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background: rgba(0,0,0,.8);
+		cursor: pointer;
+	}
+	&__close {
+		position: absolute;
+		right: 30px;
+		top: 30px;
+		width: 40px;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		&::before, &::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			top: 0;
+			margin: auto;
+			width: 24px;
+			height: 3px;
+			background: var(--color-white);
+			font-size: 0;
+		}
+		&::before {
+			transform: rotate(45deg);
+		}
+		&::after {
+			transform: rotate(-45deg);
+		}
+		& span {
+			display: none;
+		}
+	}
+	&__slider {
+		& .swiper {
+			&-wrapper {
+				max-height: 80vh;
+			}
+		}
+		&_item {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: auto;
+		}
+		&_arrow {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			width: 10vw;
+			height: 10vw;
+			opacity: .65;
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				width: 16px;
+				height: 16px;
+				border-bottom: 2px solid var(--color-white);
+				font-size: 0;
+			}
+			&.prev {
+				left: 0;
+				&::before {
+					border-left: 2px solid var(--color-white);
+					transform: rotate(45deg);
+				}
+			}
+			&.next {
+				right: 0;
+				&::before {
+					border-right: 2px solid var(--color-white);
+					transform: rotate(-45deg);
+				}
+			}
+		}
+	}
+}
+@media(hover) {
+	.rs-popup-img {
+		&__close {
+			cursor: pointer;
+		}
+		&__slider {
+			&_arrow {
+				cursor: pointer;
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+@media(max-width: 768px) {
+	.rs-popup-img {
+		&__slider {
+			&_arrow {
+				&:hover {
+					width: 12px;
+					height: 12px;
+				}
+				&.prev {
+					&::before {
+						left: 20px;
+					}
+				}
+				&.next {
+					&::before {
+						right: 20px;
+					}
+				}
+			}
+		}
+	}
+}

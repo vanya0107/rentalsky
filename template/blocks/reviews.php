@@ -1,0 +1,184 @@
+<header>
+    <h2 class="rs-title rs-title-h2 rs-title-h2--band">Отзывы наших клиентов</h2>
+</header>
+<div class="rs-reviews__slider swiper" data-slider="reviews">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="rs-reviews__item">
+                <p class="rs-reviews__avatar">
+                    <img src="img/avatar-default.png" alt="">
+                </p>
+                <div class="rs-reviews__info">
+                    <p class="rs-reviews__name">Тиханский Альбрет Альбертович</p>
+                    <p class="rs-reviews__company">Директор ООО «КлиматКофрот»</p>
+                    <p class="rs-reviews__desc">
+                        Работаю с ними не первый год, никогда не подводили. Всегда вовремя приезжают и всю работу выполняют чётко. Цены всегда адекватные входят в положение и делают скидки. ВСЕМ РЕКОМЕНДУЮ.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="rs-reviews__item">
+                <p class="rs-reviews__avatar">
+                    <img src="img/avatar-default.png" alt="">
+                </p>
+                <div class="rs-reviews__info">
+                    <p class="rs-reviews__name">Маковчик Денис Дмитриевич</p>
+                    <p class="rs-reviews__company">Директор ЧУП «Альпроффасад»</p>
+                    <p class="rs-reviews__desc">
+                        Хочу выразить Вам свою благодарность за автовышку-телескоп.
+                        Как мне доложили, машинка оказалась супер, даже люлька регулируется. Теперь будем только эту автовышку заказывать.
+                        Надеюсь на дальнейшее плодотворное сотрудничество с Вами. Спасибо.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="rs-reviews__item">
+                <p class="rs-reviews__avatar">
+                    <img src="img/avatar-default.png" alt="">
+                </p>
+                <div class="rs-reviews__info">
+                    <p class="rs-reviews__name">Сергей Комоско Вечаславович</p>
+                    <p class="rs-reviews__company">Директор ООО «Индустрия рекламы»</p>
+                    <p class="rs-reviews__desc">
+                        Уже давно сотрудничаем с ООО «РенталСкай». Никогда не подводили, никогда проблем и накладок не было. Техника всегда подаётся без задержек. Что очень важно, они всегда на связи, в любое время можно позвонить или написать и заказать вышку. При этом цены демократичные. Можно договориться о скидке. Будем и дальше с ними сотрудничать.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="rs-reviews__item">
+                <p class="rs-reviews__avatar">
+                    <img src="img/avatar-default.png" alt="">
+                </p>
+                <div class="rs-reviews__info">
+                    <p class="rs-reviews__name">Трахневич Евгений Марьянович</p>
+                    <p class="rs-reviews__company">Заместитель директора ООО «Монолит Гарант Систем»</p>
+                    <p class="rs-reviews__desc">
+                        Отличная организация для аренды автовышек! Профессиональный подход к клиентам, быстрая и своевременная подача  и высокое качество техники обеспечивают комфорт в работе. Рекомендую всем!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="rs-reviews__item">
+                <p class="rs-reviews__avatar">
+                    <img src="img/avatar-default.png" alt="">
+                </p>
+                <div class="rs-reviews__info">
+                    <p class="rs-reviews__name">Чумак Наталья Руслановна</p>
+                    <p class="rs-reviews__company">Диспетчер РУП «Минскэнерго» ф-л «Минскэнергоспецремонт»</p>
+                    <p class="rs-reviews__desc">
+                        Заказывали автовышку - остались довольны!
+                        Услуга предоставлена вовремя, все оперативно и качественно. Не пришлось ждать и нервничать, все сделали быстро и профессионально.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="rs-reviews__item">
+                <p class="rs-reviews__avatar">
+                    <img src="img/avatar-default.png" alt="">
+                </p>
+                <div class="rs-reviews__info">
+                    <p class="rs-reviews__name">Семенюк Даниил Иванович</p>
+                    <p class="rs-reviews__company">Cпециалист по закупкам ООО «Стройплац»</p>
+                    <p class="rs-reviews__desc">
+                        Спасибо. С вышкой действительно быстрее и проще работать.
+                        Отдельная благодарность, что без задержек, все оперативно. И цена отличная. Буду обращаться теперь к вам постоянно.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "РенталСкай",
+  "review": [
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Тиханский Альбрет Альбертович"
+      },
+      "reviewBody": "Работаю с ними не первый год, никогда не подводили. Всегда вовремя приезжают и всю работу выполняют чётко. Цены всегда адекватные входят в положение и делают скидки. ВСЕМ РЕКОМЕНДУЮ."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Маковчик Денис Дмитриевич"
+      },
+      "reviewBody": "Хочу выразить Вам свою благодарность за автовышку-телескоп. Как мне доложили, машинка оказалась супер, даже люлька регулируется. Теперь будем только эту автовышку заказывать. Надеюсь на дальнейшее плодотворное сотрудничество с Вами. Спасибо."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Сергей Комоско Вечаславович"
+      },
+      "reviewBody": "Уже давно сотрудничаем с ООО «РенталСкай». Никогда не подводили, никогда проблем и накладок не было. Техника всегда подаётся без задержек. Что очень важно, они всегда на связи, в любое время можно позвонить или написать и заказать вышку. При этом цены демократичные. Можно договориться о скидке. Будем и дальше с ними сотрудничать."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Трахневич Евгений Марьянович"
+      },
+      "reviewBody": "Отличная организация для аренды автовышек! Профессиональный подход к клиентам, быстрая и своевременная подача и высокое качество техники обеспечивают комфорт в работе. Рекомендую всем!"
+    },
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Чумак Наталья Руслановна"
+      },
+      "reviewBody": "Заказывали автовышку - остались довольны! Услуга предоставлена вовремя, все оперативно и качественно. Не пришлось ждать и нервничать, все сделали быстро и профессионально."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Семенюк Даниил Иванович"
+      },
+      "reviewBody": "Спасибо. С вышкой действительно быстрее и проще работать. Отдельная благодарность, что без задержек, все оперативно. И цена отличная. Буду обращаться теперь к вам постоянно."
+    }
+  ]
+}
+</script>

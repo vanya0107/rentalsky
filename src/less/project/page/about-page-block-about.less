@@ -1,0 +1,71 @@
+.rs-about-page-block-about {
+	& .rs-block-about__review {
+		&_video {
+			flex: 0 0 553px;
+			width: 553px;
+			height: 428px;
+		}
+		&_desc {
+			margin-left: 38px;
+		}
+	}
+	& .rs-block-about__advantages {
+		margin-top: -20px;
+		&_item {
+			padding-left: 0;
+			padding-right: 31px;
+		}
+	}
+}
+@media(max-width: 1024px) {
+	.rs-about-page-block-about {
+		& .rs-block-about__review {
+			&_video {
+				flex: 0 1 553px;
+			}
+			&_desc {
+				margin-left: 0;
+			}
+		}
+		& .rs-block-about__advantages {
+			margin-top: 0;
+			justify-content: space-between;
+			&_item {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+	}
+}
+@media(max-width: 640px) {
+	.rs-about-page-block-about {
+		& .rs-block-about__review {
+			&_video {
+				padding-top: 72%;
+				height: auto;
+			}
+			&_desc {
+				margin-left: 0;
+			}
+		}
+		& .rs-block-about__advantages {
+			justify-content: center;
+			margin-left: -10px;
+			&_item {
+				flex: 0 0 calc(50% - 10px);
+				width: calc(50% - 10px);
+				margin-left: 10px;
+				text-align: center;
+			}
+			&_value {
+				font-size: 50px;
+			}
+			&_year {
+				font-size: 16px;
+			}
+			&_desc {
+				font-size: 14px;
+			}
+		}
+	}
+}

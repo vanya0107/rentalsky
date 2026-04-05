@@ -1,0 +1,122 @@
+.rs-footer {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 84px;
+	padding-bottom: 84px;
+	&__left, &__right {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		max-width: 320px;
+		&:first-child {
+			margin-right: 28px;
+		}
+		&>* {
+			&:first-child {
+				margin-bottom: 28px;
+			}
+		}
+	}
+	&__logo {
+		max-width: 247px;
+		width: 100%;
+		height: 41px;
+		& img {
+			width: 100%;
+			height: 100%;
+			object-position: center;
+			object-fit: contain;
+		}
+		&[href] {
+			&:hover {
+				opacity: .65;
+			}
+		}
+	}
+	&__details {
+		font-size: 16px;
+		color: var(--color-white);
+		font-weight: 500;
+	}
+	&__contacts {
+		&>* {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			font-size: 16px;
+			color: var(--color-white);
+			margin-bottom: 5px;
+			transition: .3s;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			& svg {
+				fill: currentColor;
+				flex: 0 0 32px;
+				width: 32px;
+				height: 32px;
+				margin-right: 14px;
+			}
+			&:hover {
+				color: var(--color-black);
+			}
+		}
+	}
+	&__social {
+		color: var(--color-white);
+		font-size: 16px;
+		font-weight: 600;
+		&_links {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			flex-wrap: wrap;
+			margin-top: 10px;
+			margin-left: -22px;
+			margin-bottom: -22px;
+			&>* {
+				flex: 0 0 37px;
+				width: 37px;
+				height: 37px;
+				margin-left: 22px;
+				margin-bottom: 22px;
+				color: currentColor;
+				& svg {
+					fill: currentColor;
+					width: 100%;
+					height: 100%;
+					transition: .3s;
+				}
+				&:hover {
+					& svg {
+						fill: var(--color-black);
+					}
+				}
+			}
+		}
+	}
+}
+@media(max-width: 1024px) {
+	.rs-footer {
+		padding-top: 42px;
+		padding-bottom: 42px;
+	}
+}
+@media(max-width: 640px) {
+	.rs-footer {
+		display: block;
+		&__left, &__right {
+			display: block;
+			&:first-child {
+				margin-right: 0;
+				margin-bottom: 28px;
+			}
+		}
+		&__logo {
+			display: block;
+		}
+		&__details {
+			font-size: 16px;
+		}
+	}
+}
