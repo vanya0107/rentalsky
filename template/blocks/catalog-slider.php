@@ -4,7 +4,7 @@
             <?php if ($slug !== $catalogSlider): ?>
                 <div class="rs-catalog-slider__item rs-card swiper-slide">
                     <a href="<?= $auto['catalogLink'] ?>" class="rs-card__img">
-                        <img src="<?= $auto['previewImg'][0] ?>" loading="lazy" alt="<?= $auto['previewImg'][1] ?>">
+                        <img src="<?= $auto['previewImg'][0] ?>" loading="lazy" alt="<?= $auto['previewImg'][1] ?>" width="290" height="290">
                     </a>
                     <div class="rs-card__info">
                         <p class="rs-card__name">

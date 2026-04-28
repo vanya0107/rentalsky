@@ -82,12 +82,10 @@ const scripts = function () {
 const scriptsMin = function () {
 	return gulp.src(path.src.js)
 		.pipe(fileInclude())
-		// minification js
-		// .pipe(cleanJS({
-		// 	toplevel: true,
-		// 	compress: false, // combining functionality
-		// 	mangle: {} // replace variables
-		// }))
+		.pipe(cleanJS({
+			compress: { drop_console: true },
+			mangle: true
+		}))
 		.pipe(gulp.dest(path.prod.js))
 		.pipe(touch());
 }

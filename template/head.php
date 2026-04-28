@@ -12,10 +12,10 @@
 <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
 
 <!--styles-->
-<link rel="preload" href="css/plugins.css?v=4" as="style"/>
-<link media="all" rel="stylesheet" href="css/plugins.css?v=4" type="text/css"/>
-<link rel="preload" href="css/main.css?v=4" as="style"/>
-<link media="all" rel="stylesheet" href="css/main.css?v=4" type="text/css"/>
+<link rel="preload" href="css/plugins.css?v=5" as="style"/>
+<link media="all" rel="stylesheet" href="css/plugins.css?v=5" type="text/css"/>
+<link rel="preload" href="css/main.css?v=5" as="style"/>
+<link media="all" rel="stylesheet" href="css/main.css?v=5" type="text/css"/>
 
 <!--fonts-->
 <link rel="preload" href="/fonts/Inter/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
@@ -38,9 +38,9 @@
 <meta name="twitter:image" content="https://rentalsky.by/img/og-image.jpg">
 
 <!--scripts-->
-<script src="js/plugins.js?v=4" defer></script>
+<script src="js/plugins.js?v=5" defer></script>
 <script src="https://www.google.com/recaptcha/api.js" defer></script>
-<script src="js/main.js?v=4" defer></script>
+<script src="js/main.js?v=5" defer></script>
 
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

@@ -23,7 +23,7 @@
     <div class="rs-hero rs-hero--index">
         <picture class="rs-hero__bg">
             <source srcset="img/hero/index-mobile.webp" media="(max-width: 700px)">
-            <img src="img/hero/index.webp" alt="background image h1 block on index page" width="1920" height="864" fetchpriority="high">
+            <img src="img/hero/index.webp" alt="Аренда автовышки в Минске — выполнение высотных работ" width="1920" height="864" fetchpriority="high">
         </picture>
         <div class="rs-hero__wrap rs-container">
             <h1 class="rs-hero__title">Аренда автовышки <br> в Минске и Беларуси</h1>
@@ -40,7 +40,7 @@
                 <?php foreach ($data as $auto): ?>
                     <li class="rs-catalog-list__item rs-card">
                         <a href="<?php echo $auto['catalogLink']; ?>" class="rs-card__img">
-                            <img src="<?php echo $auto['previewImg'][0]; ?>" loading="lazy" alt="<?php echo $auto['previewImg'][1]; ?>">
+                            <img src="<?php echo $auto['previewImg'][0]; ?>" loading="lazy" alt="<?php echo $auto['previewImg'][1]; ?>" width="290" height="290">
                         </a>
                         <div class="rs-card__info">
                             <p class="rs-card__name">
@@ -82,7 +82,10 @@
             </div>
             <div class="rs-content-img-right__img">
                 <div class="rs-content-img-right__img_bg">
-                    <img src="img/content-img-right/1.jpg" alt="Аренда автовышки для высотных работ" loading="lazy" width="500" height="648">
+                    <picture>
+                        <source srcset="img/content-img-right/1-mobile.webp" media="(max-width: 1023px)">
+                        <img src="img/content-img-right/1-desktop.webp" alt="Автовышка в аренду в Минске — работы на высоте с оператором" loading="lazy" width="340" height="441">
+                    </picture>
                 </div>
             </div>
         </div>
@@ -195,7 +198,7 @@
                 <div class="swiper-wrapper">
                     <div class="rs-maintenance__item swiper-slide">
                         <p class="rs-maintenance__img">
-                            <img src="img/maintenance/1.jpg" loading="lazy" alt="">
+                            <img src="img/maintenance/1.jpg" loading="lazy" alt="Аренда автовышки для монтажа рекламы в Минске" width="328" height="235">
                         </p>
                         <p class="rs-maintenance__title">
                             Рекламно-производственные организации
@@ -206,7 +209,7 @@
                     </div>
                     <div class="rs-maintenance__item swiper-slide">
                         <p class="rs-maintenance__img">
-                            <img src="img/maintenance/2.jpg" loading="lazy" alt="">
+                            <img src="img/maintenance/2.jpg" loading="lazy" alt="Автовышка для строительных работ на высоте" width="333" height="234">
                         </p>
                         <p class="rs-maintenance__title">
                             Строительные организации
@@ -217,7 +220,7 @@
                     </div>
                     <div class="rs-maintenance__item swiper-slide">
                         <p class="rs-maintenance__img">
-                            <img src="img/maintenance/3.jpg" loading="lazy" alt="">
+                            <img src="img/maintenance/3.jpg" loading="lazy" alt="Аренда автовышки для мытья фасадов и окон" width="328" height="235">
                         </p>
                         <p class="rs-maintenance__title">
                             Клининговые организации
@@ -228,7 +231,7 @@
                     </div>
                     <div class="rs-maintenance__item swiper-slide">
                         <p class="rs-maintenance__img">
-                            <img src="img/maintenance/4.jpg" loading="lazy" alt="">
+                            <img src="img/maintenance/4.jpg" loading="lazy" alt="Аренда автовышки для освещения съёмочной площадки" width="328" height="235">
                         </p>
                         <p class="rs-maintenance__title">
                             Киностудии
@@ -239,7 +242,7 @@
                     </div>
                     <div class="rs-maintenance__item swiper-slide">
                         <p class="rs-maintenance__img">
-                            <img src="img/maintenance/5.jpg" loading="lazy" alt="">
+                            <img src="img/maintenance/5.jpg" loading="lazy" alt="Автовышка для монтажа кондиционеров и вентиляции" width="333" height="234">
                         </p>
                         <p class="rs-maintenance__title">
                             Климатические организации
