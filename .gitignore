@@ -36,4 +36,5 @@ desktop.ini
 
 #ai
 .qwen/
+.claude/settings.local.json
 

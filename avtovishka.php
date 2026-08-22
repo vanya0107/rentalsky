@@ -23,7 +23,7 @@ $catalogSlider = $car['catalogSlider'];
     <title><?php echo $car['headTitle']; ?></title>
     <link rel="canonical" href="https://rentalsky.by/<?php echo $car['catalogLink']; ?>">
 </head>
-<body>
+<body class="page-product">
 <?php
     include($baseDir . '/template/start-body.php');
     include($baseDir . '/template/header.php');
@@ -49,7 +49,9 @@ $catalogSlider = $car['catalogSlider'];
                                 $fetchPriority = $index === 0 ? ' fetchpriority="high"' : '';
 
                                 echo '<div class="rs-avtovishka__slider-big_item swiper-slide">';
-                                echo '<img src="' . $slide['big'] . '" alt="' . $slide['alt'] . '"' . $fetchPriority . ' data-popup-img-src>';
+                                $bigW = isset($slide['bigSize']) ? ' width="' . $slide['bigSize'][0] . '"' : '';
+                                $bigH = isset($slide['bigSize']) ? ' height="' . $slide['bigSize'][1] . '"' : '';
+                                echo '<img src="' . $slide['big'] . '" alt="' . $slide['alt'] . '"' . $bigW . $bigH . $fetchPriority . ' data-popup-img-src>';
                                 echo '</div>';
                             }
                         ?>
@@ -63,7 +65,9 @@ $catalogSlider = $car['catalogSlider'];
                         <?php
                         foreach ($car['sliderImg'] as $slide) {
                             echo '<div class="rs-avtovishka__slider-small_item swiper-slide">';
-                            echo '<img src="' . $slide['small'] . '" alt="' . $slide['alt'] . '" data-popup-img-src>';
+                            $smallW = isset($slide['smallSize']) ? ' width="' . $slide['smallSize'][0] . '"' : '';
+                            $smallH = isset($slide['smallSize']) ? ' height="' . $slide['smallSize'][1] . '"' : '';
+                            echo '<img src="' . $slide['small'] . '" alt="' . $slide['alt'] . '"' . $smallW . $smallH . ' data-popup-img-src>';
                             echo '</div>';
                         }
                         ?>

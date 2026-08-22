@@ -11,27 +11,37 @@ return array(
             array(
                 'big' => 'img/avtovishka-12/slider/1.webp',
                 'small' => 'img/avtovishka-12/slider/small/1.webp',
-                'alt' => 'Автовышка 12м FRK GK 12 – вид 1'
+                'alt' => 'Автовышка 12м FRK GK 12 – вид 1',
+                'bigSize' => [1000, 1000],
+                'smallSize' => [200, 200],
             ),
             array(
                 'big' => 'img/avtovishka-12/slider/2.webp',
                 'small' => 'img/avtovishka-12/slider/small/2.webp',
-                'alt' => 'Автовышка 12м FRK GK 12 – вид 2'
+                'alt' => 'Автовышка 12м FRK GK 12 – вид 2',
+                'bigSize' => [1000, 1000],
+                'smallSize' => [200, 200],
             ),
             array(
                 'big' => 'img/avtovishka-12/slider/3.webp',
                 'small' => 'img/avtovishka-12/slider/small/3.webp',
-                'alt' => 'Автовышка 12м FRK GK 12 – вид 3'
+                'alt' => 'Автовышка 12м FRK GK 12 – вид 3',
+                'bigSize' => [1000, 1000],
+                'smallSize' => [200, 200],
             ),
             array(
                 'big' => 'img/avtovishka-12/slider/4.webp',
                 'small' => 'img/avtovishka-12/slider/small/4.webp',
-                'alt' => 'Автовышка 12м FRK GK 12 – вид 4'
+                'alt' => 'Автовышка 12м FRK GK 12 – вид 4',
+                'bigSize' => [1000, 1000],
+                'smallSize' => [200, 200],
             ),
             array(
                 'big' => 'img/avtovishka-12/slider/5.webp',
                 'small' => 'img/avtovishka-12/slider/small/5.webp',
-                'alt' => 'Автовышка 12м FRK GK 12 – вид 5'
+                'alt' => 'Автовышка 12м FRK GK 12 – вид 5',
+                'bigSize' => [1000, 1000],
+                'smallSize' => [200, 200],
             ),
         ),
         'graphImg' => 'img/avtovishka-12/graph/1.webp',
@@ -64,27 +74,37 @@ return array(
             array(
                 'big' => 'img/avtovishka-18/slider/1.webp',
                 'small' => 'img/avtovishka-18/slider/small/1.webp',
-                'alt' => 'Автовышка 18м Ruthman T218 – вид 1'
+                'alt' => 'Автовышка 18м Ruthman T218 – вид 1',
+                'bigSize' => [720, 1280],
+                'smallSize' => [200, 356],
             ),
             array(
                 'big' => 'img/avtovishka-18/slider/2.webp',
                 'small' => 'img/avtovishka-18/slider/small/2.webp',
-                'alt' => 'Автовышка 18м Ruthman T218 – вид 2'
+                'alt' => 'Автовышка 18м Ruthman T218 – вид 2',
+                'bigSize' => [720, 1280],
+                'smallSize' => [200, 356],
             ),
             array(
                 'big' => 'img/avtovishka-18/slider/3.webp',
                 'small' => 'img/avtovishka-18/slider/small/3.webp',
-                'alt' => 'Автовышка 18м Ruthman T218 – вид 3'
+                'alt' => 'Автовышка 18м Ruthman T218 – вид 3',
+                'bigSize' => [720, 1280],
+                'smallSize' => [200, 356],
             ),
             array(
                 'big' => 'img/avtovishka-18/slider/4.webp',
                 'small' => 'img/avtovishka-18/slider/small/4.webp',
-                'alt' => 'Автовышка 18м Ruthman T218 – вид 4'
+                'alt' => 'Автовышка 18м Ruthman T218 – вид 4',
+                'bigSize' => [720, 1280],
+                'smallSize' => [200, 356],
             ),
             array(
                 'big' => 'img/avtovishka-18/slider/5.webp',
                 'small' => 'img/avtovishka-18/slider/small/5.webp',
-                'alt' => 'Автовышка 18м Ruthman T218 – вид 5'
+                'alt' => 'Автовышка 18м Ruthman T218 – вид 5',
+                'bigSize' => [577, 1280],
+                'smallSize' => [200, 444],
             ),
         ),
         'graphImg' => 'img/avtovishka-18/graph/1.webp',
@@ -117,27 +137,37 @@ return array(
             array(
                 'big' => 'img/avtovishka-22/slider/1.webp',
                 'small' => 'img/avtovishka-22/slider/small/1.webp',
-                'alt' => 'Автовышка 22м BC 22 – вид 1'
+                'alt' => 'Автовышка 22м BC 22 – вид 1',
+                'bigSize' => [960, 1280],
+                'smallSize' => [200, 267],
             ),
             array(
                 'big' => 'img/avtovishka-22/slider/2.webp',
                 'small' => 'img/avtovishka-22/slider/small/2.webp',
-                'alt' => 'Автовышка 22м BC 22 – вид 2'
+                'alt' => 'Автовышка 22м BC 22 – вид 2',
+                'bigSize' => [1000, 1000],
+                'smallSize' => [200, 200],
             ),
             array(
                 'big' => 'img/avtovishka-22/slider/3.webp',
                 'small' => 'img/avtovishka-22/slider/small/3.webp',
-                'alt' => 'Автовышка 22м BC 22 – вид 3'
+                'alt' => 'Автовышка 22м BC 22 – вид 3',
+                'bigSize' => [1000, 1000],
+                'smallSize' => [200, 200],
             ),
             array(
                 'big' => 'img/avtovishka-22/slider/4.webp',
                 'small' => 'img/avtovishka-22/slider/small/4.webp',
-                'alt' => 'Автовышка 22м BC 22 – вид 4'
+                'alt' => 'Автовышка 22м BC 22 – вид 4',
+                'bigSize' => [1000, 1000],
+                'smallSize' => [200, 200],
             ),
             array(
                 'big' => 'img/avtovishka-22/slider/5.webp',
                 'small' => 'img/avtovishka-22/slider/small/5.webp',
-                'alt' => 'Автовышка 22м BC 22 – вид 5'
+                'alt' => 'Автовышка 22м BC 22 – вид 5',
+                'bigSize' => [1000, 1000],
+                'smallSize' => [200, 200],
             ),
         ),
         'graphImg' => 'img/avtovishka-22/graph/1.webp',
@@ -170,27 +200,37 @@ return array(
             array(
                 'big' => 'img/avtovishka-25/slider/1.webp',
                 'small' => 'img/avtovishka-25/slider/small/1.webp',
-                'alt' => 'Автовышка 25м Ruthmann T255 – вид 1'
+                'alt' => 'Автовышка 25м Ruthmann T255 – вид 1',
+                'bigSize' => [1000, 1000],
+                'smallSize' => [200, 200],
             ),
             array(
                 'big' => 'img/avtovishka-25/slider/2.webp',
                 'small' => 'img/avtovishka-25/slider/small/2.webp',
-                'alt' => 'Автовышка 25м Ruthmann T255 – вид 2'
+                'alt' => 'Автовышка 25м Ruthmann T255 – вид 2',
+                'bigSize' => [1000, 1000],
+                'smallSize' => [200, 200],
             ),
             array(
                 'big' => 'img/avtovishka-25/slider/3.webp',
                 'small' => 'img/avtovishka-25/slider/small/3.webp',
-                'alt' => 'Автовышка 25м Ruthmann T255 – вид 3'
+                'alt' => 'Автовышка 25м Ruthmann T255 – вид 3',
+                'bigSize' => [1000, 1333],
+                'smallSize' => [200, 267],
             ),
             array(
                 'big' => 'img/avtovishka-25/slider/4.webp',
                 'small' => 'img/avtovishka-25/slider/small/4.webp',
-                'alt' => 'Автовышка 25м Ruthmann T255 – вид 4'
+                'alt' => 'Автовышка 25м Ruthmann T255 – вид 4',
+                'bigSize' => [1000, 1000],
+                'smallSize' => [200, 200],
             ),
             array(
                 'big' => 'img/avtovishka-25/slider/5.webp',
                 'small' => 'img/avtovishka-25/slider/small/5.webp',
-                'alt' => 'Автовышка 25м Ruthmann T255 – вид 5'
+                'alt' => 'Автовышка 25м Ruthmann T255 – вид 5',
+                'bigSize' => [1000, 1333],
+                'smallSize' => [200, 267],
             ),
         ),
         'graphImg' => 'img/avtovishka-25/graph/1.webp',
@@ -223,27 +263,37 @@ return array(
             array(
                 'big' => 'img/avtovishka-28maz/slider/1.webp',
                 'small' => 'img/avtovishka-28maz/slider/small/1.webp',
-                'alt' => 'Автовышка 28м МАЗ ПМС 328 – вид 1'
+                'alt' => 'Автовышка 28м МАЗ ПМС 328 – вид 1',
+                'bigSize' => [720, 905],
+                'smallSize' => [200, 251],
             ),
             array(
                 'big' => 'img/avtovishka-28maz/slider/2.webp',
                 'small' => 'img/avtovishka-28maz/slider/small/2.webp',
-                'alt' => 'Автовышка 28м МАЗ ПМС 328 – вид 2'
+                'alt' => 'Автовышка 28м МАЗ ПМС 328 – вид 2',
+                'bigSize' => [960, 1280],
+                'smallSize' => [200, 267],
             ),
             array(
                 'big' => 'img/avtovishka-28maz/slider/3.webp',
                 'small' => 'img/avtovishka-28maz/slider/small/3.webp',
-                'alt' => 'Автовышка 28м МАЗ ПМС 328 – вид 3'
+                'alt' => 'Автовышка 28м МАЗ ПМС 328 – вид 3',
+                'bigSize' => [1000, 1000],
+                'smallSize' => [200, 200],
             ),
             array(
                 'big' => 'img/avtovishka-28maz/slider/4.webp',
                 'small' => 'img/avtovishka-28maz/slider/small/4.webp',
-                'alt' => 'Автовышка 28м МАЗ ПМС 328 – вид 4'
+                'alt' => 'Автовышка 28м МАЗ ПМС 328 – вид 4',
+                'bigSize' => [1000, 1000],
+                'smallSize' => [200, 200],
             ),
             array(
                 'big' => 'img/avtovishka-28maz/slider/5.webp',
                 'small' => 'img/avtovishka-28maz/slider/small/5.webp',
-                'alt' => 'Автовышка 28м МАЗ ПМС 328 – вид 5'
+                'alt' => 'Автовышка 28м МАЗ ПМС 328 – вид 5',
+                'bigSize' => [1000, 1000],
+                'smallSize' => [200, 200],
             ),
         ),
         'graphImg' => 'img/avtovishka-28maz/graph/1.webp',
@@ -276,27 +326,37 @@ return array(
             array(
                 'big' => 'img/avtovishka-28iveco/slider/1.webp',
                 'small' => 'img/avtovishka-28iveco/slider/small/1.webp',
-                'alt' => 'Автовышка 28м Iveco Telebasket 27J – вид 1'
+                'alt' => 'Автовышка 28м Iveco Telebasket 27J – вид 1',
+                'bigSize' => [1000, 1333],
+                'smallSize' => [200, 267],
             ),
             array(
                 'big' => 'img/avtovishka-28iveco/slider/2.webp',
                 'small' => 'img/avtovishka-28iveco/slider/small/2.webp',
-                'alt' => 'Автовышка 28м Iveco Telebasket 27J – вид 2'
+                'alt' => 'Автовышка 28м Iveco Telebasket 27J – вид 2',
+                'bigSize' => [1000, 1333],
+                'smallSize' => [200, 267],
             ),
             array(
                 'big' => 'img/avtovishka-28iveco/slider/3.webp',
                 'small' => 'img/avtovishka-28iveco/slider/small/3.webp',
-                'alt' => 'Автовышка 28м Iveco Telebasket 27J – вид 3'
+                'alt' => 'Автовышка 28м Iveco Telebasket 27J – вид 3',
+                'bigSize' => [1000, 1333],
+                'smallSize' => [200, 267],
             ),
             array(
                 'big' => 'img/avtovishka-28iveco/slider/4.webp',
                 'small' => 'img/avtovishka-28iveco/slider/small/4.webp',
-                'alt' => 'Автовышка 28м Iveco Telebasket 27J – вид 4'
+                'alt' => 'Автовышка 28м Iveco Telebasket 27J – вид 4',
+                'bigSize' => [1000, 1333],
+                'smallSize' => [200, 267],
             ),
             array(
                 'big' => 'img/avtovishka-28iveco/slider/5.webp',
                 'small' => 'img/avtovishka-28iveco/slider/small/5.webp',
-                'alt' => 'Автовышка 28м Iveco Telebasket 27J – вид 5'
+                'alt' => 'Автовышка 28м Iveco Telebasket 27J – вид 5',
+                'bigSize' => [1000, 1333],
+                'smallSize' => [200, 267],
             ),
         ),
         'graphImg' => 'img/avtovishka-28iveco/graph/1.webp',
@@ -329,7 +389,9 @@ return array(
             array(
                 'big' => 'img/avtovishka-30/slider/1.webp',
                 'small' => 'img/avtovishka-30/slider/1.webp',
-                'alt' => 'Автовышка 30м МАЗ АГП 30 – вид 1'
+                'alt' => 'Автовышка 30м МАЗ АГП 30 – вид 1',
+                'bigSize' => [580, 435],
+                'smallSize' => [580, 435],
             ),
         ),
         'graphImg' => 'img/avtovishka-30/graph/1.webp',
@@ -362,27 +424,37 @@ return array(
             array(
                 'big' => 'img/avtovishka-40/slider/1.webp',
                 'small' => 'img/avtovishka-40/slider/small/1.webp',
-                'alt' => 'Автовышка 40м Mercedes – вид 1'
+                'alt' => 'Автовышка 40м Mercedes – вид 1',
+                'bigSize' => [1000, 1000],
+                'smallSize' => [200, 200],
             ),
             array(
                 'big' => 'img/avtovishka-40/slider/2.webp',
                 'small' => 'img/avtovishka-40/slider/small/2.webp',
-                'alt' => 'Автовышка 40м Mercedes – вид 2'
+                'alt' => 'Автовышка 40м Mercedes – вид 2',
+                'bigSize' => [1000, 1000],
+                'smallSize' => [200, 200],
             ),
             array(
                 'big' => 'img/avtovishka-40/slider/3.webp',
                 'small' => 'img/avtovishka-40/slider/small/3.webp',
-                'alt' => 'Автовышка 40м Mercedes – вид 3'
+                'alt' => 'Автовышка 40м Mercedes – вид 3',
+                'bigSize' => [1000, 1000],
+                'smallSize' => [200, 200],
             ),
             array(
                 'big' => 'img/avtovishka-40/slider/4.webp',
                 'small' => 'img/avtovishka-40/slider/small/4.webp',
-                'alt' => 'Автовышка 40м Mercedes – вид 4'
+                'alt' => 'Автовышка 40м Mercedes – вид 4',
+                'bigSize' => [1000, 1000],
+                'smallSize' => [200, 200],
             ),
             array(
                 'big' => 'img/avtovishka-40/slider/5.webp',
                 'small' => 'img/avtovishka-40/slider/small/5.webp',
-                'alt' => 'Автовышка 40м Mercedes – вид 5'
+                'alt' => 'Автовышка 40м Mercedes – вид 5',
+                'bigSize' => [1000, 1000],
+                'smallSize' => [200, 200],
             ),
         ),
         'graphImg' => 'img/avtovishka-40/graph/1.webp',
@@ -420,27 +492,37 @@ return array(
             array(
                 'big' => 'img/avtovishka-45/slider/1.webp',
                 'small' => 'img/avtovishka-45/slider/small/1.webp',
-                'alt' => 'Автовышка 45м Mercedes – вид 1'
+                'alt' => 'Автовышка 45м Mercedes – вид 1',
+                'bigSize' => [1000, 947],
+                'smallSize' => [200, 189],
             ),
             array(
                 'big' => 'img/avtovishka-45/slider/2.webp',
                 'small' => 'img/avtovishka-45/slider/small/2.webp',
-                'alt' => 'Автовышка 45м Mercedes – вид 2'
+                'alt' => 'Автовышка 45м Mercedes – вид 2',
+                'bigSize' => [1000, 1000],
+                'smallSize' => [200, 200],
             ),
             array(
                 'big' => 'img/avtovishka-45/slider/3.webp',
                 'small' => 'img/avtovishka-45/slider/small/3.webp',
-                'alt' => 'Автовышка 45м Mercedes – вид 3'
+                'alt' => 'Автовышка 45м Mercedes – вид 3',
+                'bigSize' => [1000, 1000],
+                'smallSize' => [200, 200],
             ),
             array(
                 'big' => 'img/avtovishka-45/slider/4.webp',
                 'small' => 'img/avtovishka-45/slider/small/4.webp',
-                'alt' => 'Автовышка 45м Mercedes – вид 4'
+                'alt' => 'Автовышка 45м Mercedes – вид 4',
+                'bigSize' => [1000, 1000],
+                'smallSize' => [200, 200],
             ),
             array(
                 'big' => 'img/avtovishka-45/slider/5.webp',
                 'small' => 'img/avtovishka-45/slider/small/5.webp',
-                'alt' => 'Автовышка 45м Mercedes – вид 5'
+                'alt' => 'Автовышка 45м Mercedes – вид 5',
+                'bigSize' => [1000, 1000],
+                'smallSize' => [200, 200],
             ),
         ),
         'graphImg' => 'img/avtovishka-45/graph/1.webp',

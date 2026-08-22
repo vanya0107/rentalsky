@@ -14,7 +14,7 @@
     <title>Аренда автовышек до 45м в Минске и Беларуси - РенталСкай</title>
     <link rel="canonical" href="https://rentalsky.by/">
 </head>
-<body>
+<body class="page-home">
 <?php
     include('template/start-body.php');
     include('template/header.php');

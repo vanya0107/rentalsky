@@ -6,16 +6,15 @@
 <!--favicon-->
 <link href="img/favicon.png" rel="shortcut icon" type="image/x-icon">
 
-<!--preconnect metrix-->
-<link rel="preconnect" href="https://mc.yandex.ru" crossorigin>
+<!--preconnect-->
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
 
 <!--styles-->
-<link rel="preload" href="css/plugins.css?v=5" as="style"/>
-<link media="all" rel="stylesheet" href="css/plugins.css?v=5" type="text/css"/>
-<link rel="preload" href="css/main.css?v=5" as="style"/>
-<link media="all" rel="stylesheet" href="css/main.css?v=5" type="text/css"/>
+<link rel="preload" href="css/plugins.css?v=19" as="style"/>
+<link media="all" rel="stylesheet" href="css/plugins.css?v=19" type="text/css"/>
+<link rel="preload" href="css/main.css?v=19" as="style"/>
+<link media="all" rel="stylesheet" href="css/main.css?v=19" type="text/css"/>
 
 <!--fonts-->
 <link rel="preload" href="/fonts/Inter/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
@@ -38,14 +37,30 @@
 <meta name="twitter:image" content="https://rentalsky.by/img/og-image.jpg">
 
 <!--scripts-->
-<script src="js/plugins.js?v=5" defer></script>
-<script src="https://www.google.com/recaptcha/api.js" defer></script>
-<script src="js/main.js?v=5" defer></script>
+<script src="js/main.js?v=19" defer></script>
 
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-TGLGNNKK');</script>
+<!-- Google Tag Manager (deferred: interaction or 4s fallback) -->
+<script>
+window.dataLayer = window.dataLayer || [];
+(function() {
+    var timer;
+
+    function loadGTM() {
+        if (window.__gtmLoaded) return;
+        window.__gtmLoaded = true;
+        clearTimeout(timer);
+        window.dataLayer.push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-TGLGNNKK';
+        document.head.appendChild(s);
+    }
+
+    ['scroll', 'mousemove', 'touchstart'].forEach(function(e) {
+        window.addEventListener(e, loadGTM, {once: true, passive: true});
+    });
+
+    timer = setTimeout(loadGTM, 4000);
+})();
+</script>
 <!-- End Google Tag Manager -->

@@ -1,7 +1,25 @@
-const allForm = $('[data-form]');
+function loadRecaptcha() {
+    if (window.__recaptchaLoaded) return;
+    window.__recaptchaLoaded = true;
+    var s = document.createElement('script');
+    s.src = 'https://www.google.com/recaptcha/api.js';
+    s.async = true;
+    s.defer = true;
+    document.head.appendChild(s);
+}
+
+(function() {
+    var triggers = document.querySelectorAll('form input, form textarea, form, [data-popup]');
+    triggers.forEach(function(el) {
+        var evt = (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') ? 'focus' : 'click';
+        el.addEventListener(evt, loadRecaptcha, { once: true, passive: true });
+    });
+})();
+
+const allForm = document.querySelectorAll('[data-form]');
 if(allForm.length > 0) {
-    allForm.each((i, form) => {
-        $(form).on('submit', function (e) {
+    allForm.forEach(form => {
+        form.addEventListener('submit', function(e) {
             e.preventDefault();
             let validate = false;
             const allInputForm = form.querySelectorAll('input');
@@ -47,11 +65,12 @@ const validateEmail = email => {
         );
 };
 function submitHandler(form) {
-    $.ajax({
-        type: "POST",
-        url: './template/server/mail.php',
-        data: $(form).serialize()
-    }).done(function (data) {
+    fetch('./template/server/mail.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(new FormData(form))
+    }).then(function(response) {
+        if (!response.ok) throw new Error('server error');
         var callbackPopup = document.querySelector('.rs-popup-form.callback');
         if(callbackPopup) {
             callbackPopup.classList.remove('active');
@@ -61,7 +80,7 @@ function submitHandler(form) {
         if(successPopup) {
             successPopup.classList.add('active');
         }
-    }).fail(function (jqXHR, text, error) {
+    }).catch(function() {
         var errorPopup = document.querySelector('.rs-popup-form.error');
         if(errorPopup) {
             errorPopup.classList.add('active');

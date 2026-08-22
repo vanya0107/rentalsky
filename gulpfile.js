@@ -115,5 +115,18 @@ function watch() {
 	gulp.watch(path.watch.html, html).on('change', browserSync.reload);
 }
 
+const bumpVersion = function (done) {
+	const file = './template/head.php';
+	let content = fs.readFileSync(file, 'utf8');
+	const match = content.match(/\?v=(\d+)/);
+	if (match) {
+		const newVersion = parseInt(match[1], 10) + 1;
+		content = content.replace(/\?v=\d+/g, `?v=${newVersion}`);
+		fs.writeFileSync(file, content, 'utf8');
+		console.log(`Version bumped to v=${newVersion}`);
+	}
+	done();
+};
+
 exports.default = gulp.series(gulp.parallel(scripts, styles, html, img), watch);
-exports.prod = gulp.parallel(scriptsMin, stylesMin);
+exports.prod = gulp.series(gulp.parallel(scriptsMin, stylesMin), bumpVersion);
