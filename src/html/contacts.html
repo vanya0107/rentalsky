@@ -2,63 +2,90 @@
     <body>
         <!--=include template/header.html-->
         <main>
-            <div class="rs-container rs-contacts-form rs-block-bg">
-                <header>
-                    <h1 class="rs-title rs-title-h2 rs-title-h2--band">Контакты</h1>
-                </header>
-                <div class="rs-contacts-form__wrap">
-                    <div class="rs-contacts-form__info">
-                        <p class="rs-contacts-form__text">
-                            По любым вопросам свяжитесь с нами наиболее удобным из нижеперечисленных способов, и мы оперативно ответим Вам.
-                        </p>
-                        <p class="rs-contacts-form__label">По номеру телефона:</p>
-                        <a href="tel: +375 (44) 788-94-81" class="rs-contacts-form__contact big-fs">
-                            <svg>
-                                <use xlink:href="img/s-icons.svg#phone"></use>
-                            </svg>
-                            <span>+375 (44) 788-94-81</span>
-                        </a>
-                        <p class="rs-contacts-form__label">Через любую социальную сеть:</p>
-                        <div class="rs-contacts-form__social">
-                            <!--=include template/block/socials-4.html -->
+            <!--=include template/block/breadcrumbs.html-->
+            <div class="rs-contacts-form rs-block-bg">
+                <div class="rs-container">
+                    <header>
+                        <h1 class="rs-title rs-title-h2 rs-title-h2--band">Контакты</h1>
+                    </header>
+                    <div class="rs-contacts-form__wrap">
+                        <div class="rs-contacts-form__info">
+                            <p class="rs-contacts-form__text">
+                                По любым вопросам свяжитесь с нами наиболее удобным из нижеперечисленных способов, и мы оперативно ответим Вам.
+                            </p>
+                            <p class="rs-contacts-form__label">По номеру телефона:</p>
+                            <a href="tel:+375 (44) 788-94-81" class="rs-contacts-form__contact big-fs">
+                                <svg>
+                                    <use xlink:href="img/s-icons.svg#phone"></use>
+                                </svg>
+                                <span>+375 (44) 788-94-81</span>
+                            </a>
+                            <p class="rs-contacts-form__label">Через любую социальную сеть:</p>
+                            <div class="rs-contacts-form__social">
+                                <!--=include template/block/socials-4.html -->
+                            </div>
+                            <p class="rs-contacts-form__label">Через письмо на почту:</p>
+                            <a href="mailto:rentalskyby@gmail.com" class="rs-contacts-form__contact big-fs">
+                                <svg>
+                                    <use xlink:href="img/s-icons.svg#mail-white"></use>
+                                </svg>
+                                <span>rentalskyby@gmail.com</span>
+                            </a>
                         </div>
-                        <p class="rs-contacts-form__label">Через письмо на почту:</p>
-                        <a href="mailto: rentalskyby@gmail.com" class="rs-contacts-form__contact big-fs">
-                            <svg>
-                                <use xlink:href="img/s-icons.svg#mail-white"></use>
-                            </svg>
-                            <span>rentalskyby@gmail.com</span>
-                        </a>
+                        <form class="rs-contacts-form__form" method="post" data-form>
+                            <p class="rs-contacts-form__form_text">
+                                Также Вы можете оставить заявку ниже и наш менеджер свяжется с Вами в ближайшее время.
+                            </p>
+                            <div class="rs-contacts-form__input">
+                                <input
+                                        type="text"
+                                        placeholder="Ваше Имя"
+                                        aria-label="Ваше Имя"
+                                        name="name"
+                                >
+                                <p class="rs-contacts-form__err">Введите не менее 2 символов!</p>
+                            </div>
+                            <div class="rs-contacts-form__input">
+                                <input
+                                        type="number"
+                                        placeholder="+375 (29) 555-55-55"
+                                        aria-label="Номер телефона"
+                                        name="phone"
+                                >
+                                <p class="rs-contacts-form__err">Введите корректный номер телефона!</p>
+                            </div>
+                            <div class="rs-contacts-form__captcha">
+                                <div class="g-recaptcha" data-sitekey="6LfEl6UqAAAAAJUnVJj6U5mYEFYhybntwG1m-LfU"></div>
+                            </div>
+                            <button type="submit" class="rs-contacts-form__btn rs-btn rs-btn__orange">
+                                Заказать звонок
+                            </button>
+                        </form>
                     </div>
-                    <form class="rs-contacts-form__form" method="post" data-form>
-                        <p class="rs-contacts-form__form_text">
-                            Также Вы можете оставить заявку ниже и наш менеджер свяжется с Вами в ближайшее время.
-                        </p>
-                        <div class="rs-contacts-form__input">
-                            <input
-                                    type="text"
-                                    placeholder="Ваше Имя"
-                                    name="name"
-                            >
-                            <p class="rs-contacts-form__err">Введите не менее 2 символов!</p>
-                        </div>
-                        <div class="rs-contacts-form__input">
-                            <input
-                                    type="number"
-                                    placeholder="+375 (29) 555-55-55"
-                                    name="phone"
-                            >
-                            <p class="rs-contacts-form__err">Введите корректный номер телефона!</p>
-                        </div>
-                        <div class="rs-contacts-form__captcha">
-                            <div class="g-recaptcha" data-sitekey="6LfEl6UqAAAAAJUnVJj6U5mYEFYhybntwG1m-LfU"></div>
-                        </div>
-                        <button type="submit" class="rs-contacts-form__btn rs-btn rs-btn__orange">
-                            Заказать звонок
-                        </button>
-                    </form>
                 </div>
             </div>
+            <section class="rs-contacts-map rs-block-bg rs-block-bg--gray">
+                <div class="rs-container">
+                    <header>
+                        <h2 class="rs-title rs-title-h2 rs-title-h2--band">Как нас найти</h2>
+                    </header>
+                    <a href="https://www.google.com/maps/place/%D0%90%D1%80%D0%B5%D0%BD%D0%B4%D0%B0+%D0%B0%D0%B2%D1%82%D0%BE%D0%B2%D1%8B%D1%88%D0%BA%D0%B8+%7C+%D0%9E%D0%9E%D0%9E+%22%D0%A0%D0%B5%D0%BD%D1%82%D0%B0%D0%BB%D0%A1%D0%BA%D0%B0%D0%B9%22/@53.9259494,27.4491679,16.75z/data=!4m16!1m9!3m8!1s0xa3d734646122f877:0xc5138dfa36872c0f!2z0JDRgNC10L3QtNCwINCw0LLRgtC-0LLRi9GI0LrQuCB8INCe0J7QniAi0KDQtdC90YLQsNC70KHQutCw0Lki!8m2!3d53.9258763!4d27.4514404!9m1!1b1!16s%2Fg%2F11ww3d7q1_!3m5!1s0xa3d734646122f877:0xc5138dfa36872c0f!8m2!3d53.9258763!4d27.4514404!16s%2Fg%2F11ww3d7q1_" target="_blank" rel="noopener" class="rs-contacts-map__address">
+                        <svg><use xlink:href="img/s-icons.svg#pin"></use></svg>
+                        г. Минск, пр-д Масюковщина, д. 4, каб. 36
+                    </a>
+                    <div class="rs-contacts-map__frame">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2349.3302575467155!2d27.4514404!3d53.9258763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa3d734646122f877%3A0xc5138dfa36872c0f!2z0JDRgNC10L3QtNCwINCw0LLRgtC-0LLRi9GI0LrQuCB8INCe0J7QniAi0KDQtdC90YLQsNC70KHQutCw0Lki!5e0!3m2!1sru!2sby!4v1787489000000!5m2!1sru!2sby"
+                            width="100%" height="100%"
+                            style="border:0;"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="РенталСкай на карте"
+                        ></iframe>
+                    </div>
+                </div>
+            </section>
+            <!--=include template/faq.html-->
         </main>
         <!--=include template/footer.html-->
     </body>

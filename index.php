@@ -39,17 +39,19 @@
             <ul class="rs-catalog-list__wrap">
                 <?php foreach ($data as $auto): ?>
                     <li class="rs-catalog-list__item rs-card">
-                        <a href="<?php echo $auto['catalogLink']; ?>" class="rs-card__img">
-                            <img src="<?php echo $auto['previewImg'][0]; ?>" loading="lazy" alt="<?php echo $auto['previewImg'][1]; ?>" width="290" height="290">
+                        <a href="<?php echo $auto['catalogLink']; ?>" class="rs-card__link">
+                            <div class="rs-card__img">
+                                <img src="<?php echo $auto['previewImg'][0]; ?>" loading="lazy" alt="<?php echo $auto['previewImg'][1]; ?>" width="290" height="290">
+                            </div>
+                            <div class="rs-card__info">
+                                <p class="rs-card__name">
+                                    <span><?php echo $auto['name']; ?></span>
+                                    <span><?php echo $auto['model']; ?></span>
+                                </p>
+                                <p class="rs-card__desc">от <?php echo $auto['price']; ?> за маш./смену</p>
+                                <span class="rs-card__btn rs-btn rs-btn__orange">Подробнее</span>
+                            </div>
                         </a>
-                        <div class="rs-card__info">
-                            <p class="rs-card__name">
-                                <span><?php echo $auto['name']; ?></span>
-                                <span><?php echo $auto['model']; ?></span>
-                            </p>
-                            <p class="rs-card__desc">от <?php echo $auto['price']; ?> за маш./смену</p>
-                            <a href="<?php echo $auto['catalogLink']; ?>" class="rs-card__btn rs-btn rs-btn__orange">Подробнее</a>
-                        </div>
                     </li>
                 <?php endforeach; ?>
             </ul>
@@ -334,7 +336,7 @@
             </div>
         </div>
     </section>
-    <section class="rs-reviews rs-block-bg rs-block-bg--gray" id="reviews">
+    <section class="rs-reviews rs-block-bg rs-block-bg--gray rs-block-m-bot" id="reviews">
         <div class="rs-container">
             <?php include( 'template/blocks/reviews.php' );?>
         </div>

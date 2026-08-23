@@ -3,7 +3,7 @@
         <p class="rs-contacts-form__text">
             Для заказа автовышки просто свяжитесь с нами по телефону:
         </p>
-        <a href="tel: +375 (44) 788-94-81" class="rs-contacts-form__contact big-fs">
+        <a href="tel:+375 (44) 788-94-81" class="rs-contacts-form__contact big-fs">
             <svg>
                 <use xlink:href="img/s-icons.svg#phone"></use>
             </svg>
@@ -24,6 +24,7 @@
             <input
                     type="text"
                     placeholder="Ваше Имя"
+                    aria-label="Ваше Имя"
                     name="name"
             >
             <p class="rs-contacts-form__err">Введите не менее 2 символов!</p>
@@ -32,6 +33,7 @@
             <input
                     type="number"
                     placeholder="+375 (29) 555-55-55"
+                    aria-label="Номер телефона"
                     name="phone"
             >
             <p class="rs-contacts-form__err">Введите корректный номер телефона!</p>

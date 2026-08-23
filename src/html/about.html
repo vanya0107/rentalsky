@@ -2,6 +2,7 @@
     <body>
         <!--=include template/header.html-->
         <main>
+            <!--=include template/block/breadcrumbs.html-->
             <div class="rs-hero">
                 <picture class="rs-hero__bg">
                     <source srcset="img/hero/about-mobile.webp" media="(max-width: 700px)">
@@ -11,11 +12,8 @@
                     <h1 class="rs-hero__title">О нас</h1>
                 </div>
             </div>
-            <section class="rs-block-m-bot rs-block-bg rs-block-bg--gray">
+            <div class="rs-block-m-bot rs-block-bg rs-block-bg--gray">
                 <div class="rs-container rs-content-style">
-                    <header>
-                        <h2 class="rs-title rs-title-h2 rs-title-h2--band">О нас</h2>
-                    </header>
                     <p>
                         Вас приветствует компания РенталСкай! Мы профессионалы в области аренды автовышек с более чем 10-летним опытом работы.
                     </p>
@@ -30,7 +28,7 @@
                         Если вам нужна автовышка — обращайтесь к нам! Мы с удовольствием поможем вам выполнить ваши задачи быстро, эффективно и без лишних затрат.
                     </p>
                 </div>
-            </section>
+            </div>
             <section class="rs-container rs-block-m-bot">
                 <header>
                     <h2 class="rs-title rs-title-h2">РенталСкай это:</h2>
@@ -72,7 +70,7 @@
                             <p class="rs-contacts-form__text">
                                 Для заказа автовышки просто свяжитесь с нами по телефону:
                             </p>
-                            <a href="tel: +375 (44) 788-94-81" class="rs-contacts-form__contact big-fs" target="_blank">
+                            <a href="tel:+375 (44) 788-94-81" class="rs-contacts-form__contact big-fs" target="_blank">
                                 <svg>
                                     <use xlink:href="img/s-icons.svg#phone"></use>
                                 </svg>
@@ -94,12 +92,14 @@
                                     class="rs-contacts-form__input"
                                     required
                                     placeholder="Ваше Имя"
+                                    aria-label="Ваше Имя"
                             >
                             <input
                                     type="number"
                                     class="rs-contacts-form__input"
                                     required
                                     placeholder="+375 (29) 555-55-55"
+                                    aria-label="Номер телефона"
                             >
                             <button type="submit" class="rs-contacts-form__btn rs-btn rs-btn__orange">
                                 Заказать звонок
@@ -108,10 +108,7 @@
                     </div>
                 </div>
             </section>
-            <section class="rs-reviews rs-container" id="reviews">
-                <header>
-                    <h2 class="rs-title rs-title-h2 rs-title-h2--band">Отзывы наших клиентов</h2>
-                </header>
+            <section class="rs-reviews rs-container rs-block-m-bot" id="reviews">
                 <!--=include template/block/reviews.html-->
             </section>
         </main>

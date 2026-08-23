@@ -1,0 +1,290 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - paragraph [ref=e4]
+      - navigation:
+        - link "Главная":
+          - /url: index.html
+        - link "Каталог":
+          - /url: catalog.html
+        - link "О нас":
+          - /url: about.html
+        - link "Контакты":
+          - /url: contacts.html
+        - link "Отзывы":
+          - /url: "#reviews"
+      - generic [ref=e5]:
+        - link "РенталСкай в Instagram" [ref=e6] [cursor=pointer]:
+          - /url: https://www.instagram.com/oleg_avtovyshka?igsh=dnFiamVsaWUybGpv
+        - link "Позвонить в РенталСкай" [ref=e9] [cursor=pointer]:
+          - /url: "tel: +375 (44) 788-94-81"
+  - main [ref=e16]:
+    - generic [ref=e17]:
+      - img "background image h1 block on index page" [ref=e18]
+      - generic [ref=e19]:
+        - heading "Аренда автовышки в Минске и Беларуси" [level=1] [ref=e20]
+        - paragraph [ref=e21]: Эксперты в подъеме на высоту
+        - button "Заказать автовышку" [ref=e22] [cursor=pointer]
+    - generic [ref=e24]:
+      - heading "Наша техника" [level=2] [ref=e26]
+      - list [ref=e27]:
+        - listitem [ref=e28]:
+          - 'link "Автовышка Reno, 10м Стоимость за смену: от 700 BYN Подробнее" [ref=e29] [cursor=pointer]':
+            - /url: avtovishka10m.html
+            - generic [ref=e31]:
+              - paragraph [ref=e32]: Автовышка Reno, 10м
+              - paragraph [ref=e33]: "Стоимость за смену: от 700 BYN"
+              - generic [ref=e34]: Подробнее
+        - listitem [ref=e35]:
+          - 'link "Автовышка BC 22, 22м Стоимость за смену: от 700 BYN Подробнее" [ref=e36] [cursor=pointer]':
+            - /url: avtovishka22m.html
+            - generic [ref=e38]:
+              - paragraph [ref=e39]: Автовышка BC 22, 22м
+              - paragraph [ref=e40]: "Стоимость за смену: от 700 BYN"
+              - generic [ref=e41]: Подробнее
+        - listitem [ref=e42]:
+          - 'link "Автовышка RUTHMANN T255, 25м Стоимость за смену: от 700 BYN Подробнее" [ref=e43] [cursor=pointer]':
+            - /url: avtovishka26m.html
+            - generic [ref=e45]:
+              - paragraph [ref=e46]: Автовышка RUTHMANN T255, 25м
+              - paragraph [ref=e47]: "Стоимость за смену: от 700 BYN"
+              - generic [ref=e48]: Подробнее
+        - listitem [ref=e49]:
+          - 'link "Автовышка Telebasket 27J, 28м Стоимость за смену: от 700 BYN Подробнее" [ref=e50] [cursor=pointer]':
+            - /url: avtovishka28mf.html
+            - generic [ref=e52]:
+              - paragraph [ref=e53]: Автовышка Telebasket 27J, 28м
+              - paragraph [ref=e54]: "Стоимость за смену: от 700 BYN"
+              - generic [ref=e55]: Подробнее
+        - listitem [ref=e56]:
+          - 'link "Автовышка ПМС 328, 28м Стоимость за смену: от 700 BYN Подробнее" [ref=e57] [cursor=pointer]':
+            - /url: avtovishka28m.html
+            - generic [ref=e59]:
+              - paragraph [ref=e60]: Автовышка ПМС 328, 28м
+              - paragraph [ref=e61]: "Стоимость за смену: от 700 BYN"
+              - generic [ref=e62]: Подробнее
+        - listitem [ref=e63]:
+          - 'link "Автовышка АГП-30, 30м Стоимость за смену: от 700 BYN Подробнее" [ref=e64] [cursor=pointer]':
+            - /url: avtovishka30m.html
+            - generic [ref=e66]:
+              - paragraph [ref=e67]: Автовышка АГП-30, 30м
+              - paragraph [ref=e68]: "Стоимость за смену: от 700 BYN"
+              - generic [ref=e69]: Подробнее
+        - listitem [ref=e70]:
+          - 'link "Автовышка Multitel 44T/J, 45м Стоимость за смену: от 700 BYN Подробнее" [ref=e71] [cursor=pointer]':
+            - /url: avtovishka45m.html
+            - generic [ref=e73]:
+              - paragraph [ref=e74]: Автовышка Multitel 44T/J, 45м
+              - paragraph [ref=e75]: "Стоимость за смену: от 700 BYN"
+              - generic [ref=e76]: Подробнее
+    - generic [ref=e79]:
+      - heading "Аренда автовышек" [level=2] [ref=e81]
+      - paragraph [ref=e82]: В мире строительства, ремонта, монтажа, демонтажа и обслуживания высотных объектов, аренда автовышек стала неотъемлемой частью многих проектов и сфер жизни. Наша команда предлагает квалифицированных, опытных операторов и широкий спектр автовышек в аренду, чтобы удовлетворить ваши потребности в безопасном и эффективном доступе на высоту.
+      - heading "Преимущества аренды автовышек:" [level=3] [ref=e83]
+      - list [ref=e84]:
+        - listitem [ref=e85]: "Безопасность: наши автовышки оснащены всеми необходимыми системами безопасности, чтобы обеспечить защиту вашей жизни и здоровья."
+        - listitem [ref=e86]: "Эффективность: благодаря высокой мобильности и маневренности, наши автовышки позволяют быстро и легко выполнять работы на высоте, даже в самых труднодоступных местах ."
+        - listitem [ref=e87]: "Широкий выбор: наша компания предлагает широкий спектр автовышек разной высоты и грузоподъемности, чтобы удовлетворить ваши конкретные потребности."
+        - listitem [ref=e88]: "Экономичность: аренда автовышек - это более экономичный вариант, чем покупка собственного оборудования, особенно если вы не планируете использовать его постоянно."
+    - generic [ref=e92]:
+      - heading "Как формируется цена аренды автовышки" [level=2] [ref=e94]
+      - paragraph [ref=e95]: "Цена аренды автовышки формируется на основе нескольких факторов, которые могут варьироваться. Ниже приведены основные факторы, которые влияют на цену аренды автовышки:"
+      - list [ref=e96]:
+        - listitem [ref=e97]:
+          - paragraph [ref=e98]: "Тип и модель автовышки:"
+          - paragraph [ref=e100]: Цена аренды может различаться в зависимости от типа и модели автовышки. Например, более крупные и мощные автовышки могут иметь более высокую стоимость аренды.
+        - listitem [ref=e101]:
+          - paragraph [ref=e102]: "Продолжительность аренды:"
+          - paragraph [ref=e104]: Обычно цена аренды автовышки зависит от продолжительности аренды. Чем дольше срок аренды, тем выгоднее может быть стоимость за день или за час.
+        - listitem [ref=e105]:
+          - paragraph [ref=e106]: "Местоположение:"
+          - paragraph [ref=e108]: В цену аренды автовышек включается стоимость доставки техники за пределы Минска.
+        - listitem [ref=e109]:
+          - paragraph [ref=e110]: "Спрос и предложение:"
+          - paragraph [ref=e112]: В некоторых случаях цена аренды может зависеть от текущего спроса и предложения на рынке аренды автовышек.
+        - listitem [ref=e113]:
+          - paragraph [ref=e114]: "Длительность сотрудничества с заказчиком:"
+          - paragraph [ref=e116]: Постоянным и новым клиентам мы предоставляем скидки.
+    - generic [ref=e117]:
+      - heading "Как правильно подобрать автовышку" [level=2] [ref=e119]
+      - paragraph [ref=e120]: "Чтобы правильно подобрать автовышку, необходимо обратить внимание на следующие факторы:"
+      - list [ref=e121]:
+        - listitem [ref=e122]:
+          - paragraph [ref=e123]: Высота подъема
+          - paragraph [ref=e124]: Нужно определиться, на какую высоту необходимо совершить подъем.
+        - listitem [ref=e125]:
+          - paragraph [ref=e126]: Грузоподъемность
+          - paragraph [ref=e127]: Общий вес рабочей группы и используемого инструмента, оборудования не должен превышать максимальной грузоподъемности автовышки.
+        - listitem [ref=e128]:
+          - paragraph [ref=e129]: Маневренность
+          - paragraph [ref=e130]: Если работы будут проводиться в ограниченном пространстве, на узких городских улочках, то стоит выбрать более компактную модель.
+        - listitem [ref=e131]:
+          - paragraph [ref=e132]: Пространство
+          - paragraph [ref=e133]: Необходимо учитывать наличие деревьев, проводов, зданий и других препятствий.
+        - listitem [ref=e134]:
+          - paragraph [ref=e135]: Площадка
+          - paragraph [ref=e136]: Нужно убедиться, что площадка имеет достаточное пространно для размещения автовышки с учетом вылета выносных опор.
+    - generic [ref=e138]:
+      - heading "Наши автовышки используют:" [level=2] [ref=e140]
+      - generic [ref=e142]:
+        - generic [ref=e143]:
+          - paragraph [ref=e144]
+          - paragraph [ref=e145]: Рекламно-производственные организации
+          - paragraph [ref=e146]: С помощью наших автовышек вы быстро, безопасно и эффективно сможете разместить рекламу в необходимом месте.
+        - generic [ref=e147]:
+          - paragraph [ref=e148]
+          - paragraph [ref=e149]: Строительные организации
+          - paragraph [ref=e150]: Автовышки необходимы для выполнения монтажа и демонтажа оборудования на высоте, ремонту крыш и других работ.
+        - generic [ref=e151]:
+          - paragraph [ref=e152]
+          - paragraph [ref=e153]: Клининговые организации
+          - paragraph [ref=e154]: Аренда автовышки упрощает уборку высоких зданий, обеспечивая доступ к труднодоступным местам и экономию времени.
+        - generic [ref=e155]:
+          - paragraph [ref=e156]
+          - paragraph [ref=e157]: Киностудии
+          - paragraph [ref=e158]: Наши автовышки орендуют для освещения съёмочных площадок, обеспечивая мощное и равномерное освещение.
+        - generic [ref=e159]:
+          - paragraph [ref=e160]
+          - paragraph [ref=e161]: Климатические организации
+          - paragraph [ref=e162]: Автовышки используют для монтажа и обслуживания кондиционеров, проверки и очистки вентиляционных систем, проведения термоизоляционных и других работ.
+    - generic [ref=e164]:
+      - heading "Преимущества работы с нами" [level=2] [ref=e166]
+      - list [ref=e167]:
+        - listitem [ref=e168]:
+          - paragraph [ref=e171]: Профессиональная команда
+        - listitem [ref=e172]:
+          - paragraph [ref=e175]: Надежная техника
+        - listitem [ref=e176]:
+          - paragraph [ref=e179]: Конкурентные цены
+        - listitem [ref=e180]:
+          - paragraph [ref=e183]: Гибкая сиситема скидок
+        - listitem [ref=e184]:
+          - paragraph [ref=e187]: Работаем по всей Беларуси
+    - generic [ref=e188]:
+      - heading "Компания PенталСкай это:" [level=2] [ref=e190]
+      - generic [ref=e191]:
+        - generic [ref=e192]:
+          - paragraph [ref=e193]: ">10"
+          - paragraph [ref=e194]: лет
+          - paragraph [ref=e195]: продуктивной работы
+        - generic [ref=e196]:
+          - paragraph [ref=e197]: ">2500"
+          - paragraph [ref=e198]: выполненных заказов
+          - paragraph [ref=e199]: различной сложности
+        - generic [ref=e200]:
+          - paragraph [ref=e201]: 24/7
+          - paragraph [ref=e202]: режим работы
+          - paragraph [ref=e203]: для своевременного выполнения ваших работ
+      - generic [ref=e207]:
+        - paragraph [ref=e208]: Наш автопарк представлен разнообразными моделями автовышек, чтобы удовлетворить потребности любого клиента.
+        - paragraph [ref=e209]: Мы ценим наших клиентов и поэтому предлагаем демократические цены и гибкую систему скидок. Наша цель — обеспечить вас качественной техникой и высоким уровнем сервиса.
+        - paragraph [ref=e210]: Если вам нужна автовышка — обращайтесь к нам! Мы с удовольствием поможем вам выполнить ваши задачи быстро, эффективно и без лишних затрат.
+    - generic [ref=e212]:
+      - generic [ref=e213]:
+        - heading "Отзывы наших клиентов" [level=2] [ref=e214]
+        - link "Смотреть все отзывы в Google Картах" [ref=e215] [cursor=pointer]:
+          - /url: https://www.google.com/maps/place/%D0%90%D1%80%D0%B5%D0%BD%D0%B4%D0%B0+%D0%B0%D0%B2%D1%82%D0%BE%D0%B2%D1%8B%D1%88%D0%BA%D0%B8+%7C+%D0%9E%D0%9E%D0%9E+%22%D0%A0%D0%B5%D0%BD%D1%82%D0%B0%D0%BB%D0%A1%D0%BA%D0%B0%D0%B9%22/@53.9259494,27.4491679,16.75z/data=!4m16!1m9!3m8!1s0xa3d734646122f877:0xc5138dfa36872c0f!2z0JDRgNC10L3QtNCwINCw0LLRgtC-0LLRi9GI0LrQuCB8INCe0J7QniAi0KDQtdC90YLQsNC70KHQutCw0Lki!8m2!3d53.9258763!4d27.4514404!9m1!1b1!16s%2Fg%2F11ww3d7q1_!3m5!1s0xa3d734646122f877:0xc5138dfa36872c0f!8m2!3d53.9258763!4d27.4514404!16s%2Fg%2F11ww3d7q1_
+      - generic [ref=e219]:
+        - generic [ref=e221]:
+          - paragraph [ref=e222]
+          - generic [ref=e223]:
+            - paragraph [ref=e224]: Ivan Slatvinski
+            - paragraph [ref=e227]: Отличный сервис! Машина исправная, оператор вежливый, приехали вовремя. Всё чётко и по делу. Рекомендую компанию как надежного подрядчика!
+        - generic [ref=e229]:
+          - paragraph [ref=e230]
+          - generic [ref=e231]:
+            - paragraph [ref=e232]: Igor Petrovich
+            - paragraph [ref=e235]: Очень доволен работой с Rentalsky. Заказывал автовышку для строительных работ — техника в отличном состоянии, доставка была точно в срок, а ребята помогли выбрать подходящий вариант под мои задачи. Общение было приятным и по делу, чувствовал себя уверенно. Рекомендую - всё прошло гладко и без заминок.
+        - generic [ref=e237]:
+          - paragraph [ref=e238]
+          - generic [ref=e239]:
+            - paragraph [ref=e240]: Batyr Saparaliev
+            - paragraph [ref=e243]: Искал срочно автовышку для ремонта кровли частного дома. Оперативно отозвались, помогли с подбором и быстро приехали. Все что нужно было сделали. В следующий раз буду обязательно обращаться!
+        - generic [ref=e245]:
+          - paragraph [ref=e246]
+          - generic [ref=e247]:
+            - paragraph [ref=e248]: Вероника Набокина
+            - paragraph [ref=e251]: Обращались за автовышкой. Все понравилось. Будем сотрудничать дальше.
+        - generic [ref=e253]:
+          - paragraph [ref=e254]
+          - generic [ref=e255]:
+            - paragraph [ref=e256]: Тиханский Альбрет Альбертович
+            - paragraph [ref=e257]: Директор ООО «КлиматКофрот»
+            - paragraph [ref=e258]: Работаю с ними не первый год, никогда не подводили. Всегда вовремя приезжают и всю работу выполняют чётко. Цены всегда адекватные входят в положение и делают скидки. ВСЕМ РЕКОМЕНДУЮ.
+        - generic [ref=e260]:
+          - paragraph [ref=e261]
+          - generic [ref=e262]:
+            - paragraph [ref=e263]: Маковчик Денис Дмитриевич
+            - paragraph [ref=e264]: Директор ЧУП «Альпроффасад»
+            - paragraph [ref=e265]: Хочу выразить Вам свою благодарность за автовышку-телескоп. Как мне доложили, машинка оказалась супер, даже люлька регулируется. Теперь будем только эту автовышку заказывать. Надеюсь на дальнейшее плодотворное сотрудничество с Вами. Спасибо.
+        - generic [ref=e267]:
+          - paragraph [ref=e268]
+          - generic [ref=e269]:
+            - paragraph [ref=e270]: Сергей Комоско Вечаславович
+            - paragraph [ref=e271]: Директор ООО «Индустрия рекламы»
+            - paragraph [ref=e272]: Уже давно сотрудничаем с ООО «РенталСкай». Никогда не подводили, никогда проблем и накладок не было. Техника всегда подаётся без задержек. Что очень важно, они всегда на связи, в любое время можно позвонить или написать и заказать вышку. При этом цены демократичные. Можно договориться о скидке. Будем и дальше с ними сотрудничать.
+        - generic [ref=e274]:
+          - paragraph [ref=e275]
+          - generic [ref=e276]:
+            - paragraph [ref=e277]: Трахневич Евгений Марьянович
+            - paragraph [ref=e278]: Заместитель директора ООО «Монолит Гарант Систем»
+            - paragraph [ref=e279]: Отличная организация для аренды автовышек! Профессиональный подход к клиентам, быстрая и своевременная подача и высокое качество техники обеспечивают комфорт в работе. Рекомендую всем!
+        - generic [ref=e281]:
+          - paragraph [ref=e282]
+          - generic [ref=e283]:
+            - paragraph [ref=e284]: Чумак Наталья Руслановна
+            - paragraph [ref=e285]: Диспетчер РУП «Минскэнерго» ф-л «Минскэнергоспецремонт»
+            - paragraph [ref=e286]: Заказывали автовышку - остались довольны! Услуга предоставлена вовремя, все оперативно и качественно. Не пришлось ждать и нервничать, все сделали быстро и профессионально.
+        - generic [ref=e288]:
+          - paragraph [ref=e289]
+          - generic [ref=e290]:
+            - paragraph [ref=e291]: Семенюк Даниил Иванович
+            - paragraph [ref=e292]: Cпециалист по закупкам ООО «Стройплац»
+            - paragraph [ref=e293]: Спасибо. С вышкой действительно быстрее и проще работать. Отдельная благодарность, что без задержек, все оперативно. И цена отличная. Буду обращаться теперь к вам постоянно.
+        - generic [ref=e295]:
+          - paragraph [ref=e296]
+          - generic [ref=e297]:
+            - paragraph [ref=e298]: Александр Михеев
+            - paragraph [ref=e301]: Обращался за автовышкой. Помогли с подбором и оперативно подали машину на объект. Рекомендуем.
+        - generic [ref=e303]:
+          - paragraph [ref=e304]
+          - paragraph [ref=e306]: Масло Олег
+    - generic [ref=e309]:
+      - heading "Часто задаваемые вопросы" [level=2] [ref=e311]
+      - generic [ref=e312]:
+        - generic [ref=e313]:
+          - heading "Как быстро арендовать автовышку?" [level=3] [ref=e314] [cursor=pointer]
+          - paragraph [ref=e316]: Вы можете оставить заявку через сайт или позвонить нам.
+        - generic [ref=e317]:
+          - heading "Какие документы нужны для аренды?" [level=3] [ref=e318] [cursor=pointer]
+          - paragraph [ref=e320]: Нужен только паспорт или другой документ, удостоверяющий личность.
+        - generic [ref=e321]:
+          - heading "Можно ли заказать автовышку с оператором?" [level=3] [ref=e322] [cursor=pointer]
+          - paragraph [ref=e324]: Да, все наши автовышки предоставляются с опытными операторами.
+  - contentinfo [ref=e325]:
+    - generic [ref=e326]:
+      - generic [ref=e327]:
+        - paragraph [ref=e328]
+        - list [ref=e329]:
+          - listitem [ref=e330]: ООО "РенталСкай"
+          - listitem [ref=e331]: УНП 193735242
+          - listitem [ref=e332]: "Юр. адрес: 220055, Беларусь, г. Минск, пр-д Масюковщина, д. 4, каб. 36"
+      - generic [ref=e333]:
+        - generic [ref=e334]:
+          - link "+375 (44) 788-94-81" [ref=e335] [cursor=pointer]:
+            - /url: "tel: +375 (44) 788-94-81"
+          - link "rentalskyby@gmail.com" [ref=e339] [cursor=pointer]:
+            - /url: "mailto: rentalskyby@gmail.com"
+        - generic [ref=e343]:
+          - paragraph [ref=e344]: "Мы в социальных сетях:"
+          - generic [ref=e345]:
+            - link "РенталСкай в Instagram" [ref=e346] [cursor=pointer]:
+              - /url: https://www.instagram.com/oleg_avtovyshka?igsh=dnFiamVsaWUybGpv
+            - link "Написать РенталСкай в WhatsApp" [ref=e349] [cursor=pointer]:
+              - /url: https://wa.me/375296309772
+            - link "Написать РенталСкай в Telegram" [ref=e352] [cursor=pointer]:
+              - /url: https://t.me/Scorpion_1975
+            - link "Написать РенталСкай в Viber" [ref=e355] [cursor=pointer]:
+              - /url: https://viber.click/375447889481
+  - text: magick 1.heif[0] -resize 1000x -quality 95 -define jpeg:extent=200KB 1.jpg
+  - generic: "Browsersync: connected"

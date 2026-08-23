@@ -11,10 +11,10 @@
 <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
 
 <!--styles-->
-<link rel="preload" href="css/plugins.css?v=19" as="style"/>
-<link media="all" rel="stylesheet" href="css/plugins.css?v=19" type="text/css"/>
-<link rel="preload" href="css/main.css?v=19" as="style"/>
-<link media="all" rel="stylesheet" href="css/main.css?v=19" type="text/css"/>
+<link rel="preload" href="css/plugins.css?v=28" as="style"/>
+<link media="all" rel="stylesheet" href="css/plugins.css?v=28" type="text/css"/>
+<link rel="preload" href="css/main.css?v=28" as="style"/>
+<link media="all" rel="stylesheet" href="css/main.css?v=28" type="text/css"/>
 
 <!--fonts-->
 <link rel="preload" href="/fonts/Inter/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
@@ -37,7 +37,7 @@
 <meta name="twitter:image" content="https://rentalsky.by/img/og-image.jpg">
 
 <!--scripts-->
-<script src="js/main.js?v=19" defer></script>
+<script src="js/main.js?v=28" defer></script>
 
 <!-- Google Tag Manager (deferred: interaction or 4s fallback) -->
 <script>

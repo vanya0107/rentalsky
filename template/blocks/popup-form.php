@@ -14,6 +14,7 @@
                 <input
                         type="text"
                         placeholder="Ваше Имя"
+                        aria-label="Ваше Имя"
                         name="name"
                 >
                 <p class="rs-popup-form__err">Введите не менее 2 символов!</p>
@@ -22,6 +23,7 @@
                 <input
                         type="number"
                         placeholder="+375 (29) 555-55-55"
+                        aria-label="Номер телефона"
                         name="phone"
                 >
                 <p class="rs-popup-form__err">Введите корректный номер телефона!</p>
@@ -30,6 +32,7 @@
                 <input
                     type="email"
                     placeholder="E-mail"
+                    aria-label="E-mail"
                     name="email"
                 >
                 <p class="rs-popup-form__err">Введите корректный email!</p>

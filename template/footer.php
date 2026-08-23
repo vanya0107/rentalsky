@@ -18,13 +18,13 @@
         </div>
         <div class="rs-footer__right">
             <div class="rs-footer__contacts">
-                <a href="tel: +375 (44) 788-94-81">
+                <a href="tel:+375 (44) 788-94-81">
                     <svg>
                         <use xlink:href="img/s-icons.svg#phone"></use>
                     </svg>
                     <span>+375 (44) 788-94-81</span>
                 </a>
-                <a href="mailto: rentalskyby@gmail.com">
+                <a href="mailto:rentalskyby@gmail.com">
                     <svg>
                         <use xlink:href="img/s-icons.svg#mail-orange"></use>
                     </svg>

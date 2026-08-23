@@ -14,22 +14,24 @@
 <?php
     include('template/start-body.php');
     include('template/header.php');
+    $breadcrumbs = [
+        ['label' => 'Главная', 'url' => '/'],
+        ['label' => 'О нас'],
+    ];
+    include('template/blocks/breadcrumbs.php');
 ?>
 <main>
     <div class="rs-hero">
         <picture class="rs-hero__bg">
             <source srcset="img/hero/about-mobile.webp" media="(max-width: 700px)">
-            <img src="img/hero/about.webp" alt="background image h1 block on about page" width="1920" height="200">
+            <img src="img/hero/about.webp" alt="РенталСкай — о компании" width="1920" height="200" fetchpriority="high">
         </picture>
         <div class="rs-hero__wrap rs-container">
             <h1 class="rs-hero__title">О нас</h1>
         </div>
     </div>
-    <section class="rs-block-m-bot rs-block-bg rs-block-bg--gray">
+    <div class="rs-block-m-bot rs-block-bg rs-block-bg--gray">
         <div class="rs-container rs-content-style">
-            <header>
-                <h2 class="rs-title rs-title-h2 rs-title-h2--band">О нас</h2>
-            </header>
             <p>
                 Вас приветствует компания РенталСкай! Мы профессионалы в области аренды автовышек с более чем 10-летним опытом работы.
             </p>
@@ -44,7 +46,7 @@
                 Если вам нужна автовышка — обращайтесь к нам! Мы с удовольствием поможем вам выполнить ваши задачи быстро, эффективно и без лишних затрат.
             </p>
         </div>
-    </section>
+    </div>
     <section class="rs-container rs-block-m-bot">
         <header>
             <h2 class="rs-title rs-title-h2">РенталСкай это:</h2>
@@ -84,7 +86,7 @@
             <?php include('template/blocks/contacts-form-single-page.php'); ?>
         </div>
     </section>
-    <section class="rs-reviews" id="reviews">
+    <section class="rs-reviews rs-block-m-bot" id="reviews">
         <div class="rs-container">
             <?php include( 'template/blocks/reviews.php' );?>
         </div>

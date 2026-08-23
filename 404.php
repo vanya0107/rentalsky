@@ -3,9 +3,10 @@
 <head>
     <?php
         include('template/head.php');
-        $page = 'contacts';
+        $page = '404';
     ?>
     <meta name="description" content="Страница ошибки 404 сайта rentalsky.by">
+    <meta name="robots" content="noindex, follow">
     <title>Аренда автовышек. Страница с ошибкой 404</title>
 </head>
 <body>

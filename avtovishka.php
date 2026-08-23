@@ -27,7 +27,45 @@ $catalogSlider = $car['catalogSlider'];
 <?php
     include($baseDir . '/template/start-body.php');
     include($baseDir . '/template/header.php');
+    $breadcrumbs = [
+        ['label' => 'Главная', 'url' => '/'],
+        ['label' => 'Каталог', 'url' => '/catalog'],
+        ['label' => $car['name'] . ' ' . $car['model']],
+    ];
+    include($baseDir . '/template/blocks/breadcrumbs.php');
+
+    $productSchema = [
+        '@context' => 'https://schema.org',
+        '@type' => 'Product',
+        'name' => $car['name'] . ' ' . $car['model'],
+        'description' => $car['seoText'],
+        'image' => 'https://rentalsky.by/' . $car['previewImg'][0],
+        'model' => $car['model'],
+        'sku' => $car['catalogSlider'],
+        'additionalProperty' => array_map(function ($p) {
+            return [
+                '@type' => 'PropertyValue',
+                'name' => $p[0],
+                'value' => $p[1],
+            ];
+        }, array_values($car['tableParams'])),
+        'offers' => [
+            '@type' => 'Offer',
+            'url' => 'https://rentalsky.by/' . $car['catalogLink'],
+            'priceCurrency' => 'BYN',
+            'price' => preg_replace('/[^0-9.]/', '', $car['price']),
+            'availability' => 'https://schema.org/InStock',
+            'businessFunction' => 'http://purl.org/goodrelations/v1#LeaseOut',
+            'seller' => [
+                '@type' => 'Organization',
+                'name' => 'РенталСкай',
+            ],
+        ],
+    ];
 ?>
+<script type="application/ld+json">
+<?= json_encode($productSchema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) ?>
+</script>
 <main>
     <div class="rs-container rs-block-bg rs-block-m-bot">
         <header>
@@ -125,7 +163,7 @@ $catalogSlider = $car['catalogSlider'];
         </header>
         <?php include($baseDir . '/template/blocks/contacts-form-single-page.php'); ?>
     </section>
-    <section class="rs-reviews rs-block-bg rs-block-bg--gray" id="reviews">
+    <section class="rs-reviews rs-block-bg rs-block-bg--gray rs-block-m-bot" id="reviews">
         <div class="rs-container">
             <?php include($baseDir . '/template/blocks/reviews.php'); ?>
         </div>
@@ -152,6 +190,6 @@ $catalogSlider = $car['catalogSlider'];
 } else {
     // 404
     header("HTTP/1.0 404 Not Found");
-    echo "<h1>Автомобиль не найден</h1>";
+    include($baseDir . '/404.php');
 }
 ?>

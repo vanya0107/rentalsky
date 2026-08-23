@@ -15,6 +15,11 @@
             <?php } else { ?>
                 <a href="/">Главная</a>
             <?php } ?>
+            <?php if(isset($page) && $page == 'catalog') { ?>
+                <p class="active">Каталог</p>
+            <?php } else { ?>
+                <a href="/catalog">Каталог</a>
+            <?php } ?>
             <?php if(isset($page) && $page == 'about') { ?>
                 <p class="active">О нас</p>
             <?php } else { ?>
@@ -33,7 +38,7 @@
                     <use xlink:href="img/s-icons.svg#instagram"></use>
                 </svg>
             </a>
-            <a href="tel: +375 (44) 788-94-81" aria-label="Позвонить в РенталСкай">
+            <a href="tel:+375 (44) 788-94-81" aria-label="Позвонить в РенталСкай">
                 <svg>
                     <use xlink:href="img/s-icons.svg#phone"></use>
                 </svg>
