@@ -1,13 +1,14 @@
+<?php $company = include __DIR__ . '/../data/company.php'; ?>
 <div class="rs-contacts-form__wrap">
     <div class="rs-contacts-form__info">
         <p class="rs-contacts-form__text">
             Для заказа автовышки просто свяжитесь с нами по телефону:
         </p>
-        <a href="tel:+375 (44) 788-94-81" class="rs-contacts-form__contact big-fs">
+        <a href="tel:<?= $company['phoneDisplay'] ?>" class="rs-contacts-form__contact big-fs">
             <svg>
                 <use xlink:href="img/s-icons.svg#phone"></use>
             </svg>
-            <span>+375 (44) 788-94-81</span>
+            <span><?= $company['phoneDisplay'] ?></span>
         </a>
         <p class="rs-contacts-form__text">
             или напишите нам в любой социальной сети, наши специалисты с радостью помогут Вам выбрать подходящую автовышку и ответят на все Ваши вопросы. :
@@ -38,6 +39,7 @@
             >
             <p class="rs-contacts-form__err">Введите корректный номер телефона!</p>
         </div>
+        <input type="text" name="website" value="" autocomplete="off" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;overflow:hidden;">
         <button type="submit" class="rs-contacts-form__btn rs-btn rs-btn__orange">
             Заказать звонок
         </button>

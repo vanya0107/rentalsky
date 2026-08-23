@@ -12,6 +12,13 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit;
 }
 
+if (!empty($_POST['website'])) {
+    // Honeypot-поле — люди его не видят и не заполняют, боты обычно заполняют всё.
+    // Отвечаем "успехом", чтобы не подсказывать боту, что его распознали.
+    http_response_code(200);
+    exit;
+}
+
 $name  = isset($_POST['name'])  ? strip_tags(trim($_POST['name']))  : '';
 $phone = isset($_POST['phone']) ? strip_tags(trim($_POST['phone'])) : '';
 $email = isset($_POST['email']) ? strip_tags(trim($_POST['email'])) : '';

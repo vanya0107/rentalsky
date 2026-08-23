@@ -23,6 +23,7 @@ desktop.ini
 .env
 .env.local
 .env.*.local
+template/server/smtp_config.php
 
 # Временные файлы
 *.tmp

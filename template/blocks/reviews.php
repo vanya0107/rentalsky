@@ -1,5 +1,6 @@
 <?php $isFullReviewSchema = isset($page) && $page === 'about'; ?>
-<?php $googleMapsUrl = 'https://www.google.com/maps/place/%D0%90%D1%80%D0%B5%D0%BD%D0%B4%D0%B0+%D0%B0%D0%B2%D1%82%D0%BE%D0%B2%D1%8B%D1%88%D0%BA%D0%B8+%7C+%D0%9E%D0%9E%D0%9E+%22%D0%A0%D0%B5%D0%BD%D1%82%D0%B0%D0%BB%D0%A1%D0%BA%D0%B0%D0%B9%22/@53.9259494,27.4491679,16.75z/data=!4m16!1m9!3m8!1s0xa3d734646122f877:0xc5138dfa36872c0f!2z0JDRgNC10L3QtNCwINCw0LLRgtC-0LLRi9GI0LrQuCB8INCe0J7QniAi0KDQtdC90YLQsNC70KHQutCw0Lki!8m2!3d53.9258763!4d27.4514404!9m1!1b1!16s%2Fg%2F11ww3d7q1_!3m5!1s0xa3d734646122f877:0xc5138dfa36872c0f!8m2!3d53.9258763!4d27.4514404!16s%2Fg%2F11ww3d7q1_'; ?>
+<?php $company = include __DIR__ . '/../data/company.php'; ?>
+<?php $googleMapsUrl = $company['mapsUrl']; ?>
 <header class="rs-reviews__header">
     <h2 class="rs-title rs-title-h2 rs-title-h2--band">Отзывы наших клиентов</h2>
     <a href="<?= $googleMapsUrl ?>" target="_blank" rel="noopener" class="rs-reviews__google-link">
@@ -188,105 +189,46 @@
     <div class="swiper-pagination"></div>
 </div>
 
-<?php if ($isFullReviewSchema): ?>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "РенталСкай",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5",
-    "bestRating": "5",
-    "reviewCount": "12"
-  },
-  "review": [
-    {
-      "@type": "Review",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-      "author": { "@type": "Person", "name": "Ivan Slatvinski" },
-      "reviewBody": "Отличный сервис! Машина исправная, оператор вежливый, приехали вовремя. Всё чётко и по делу. Рекомендую компанию как надежного подрядчика!"
-    },
-    {
-      "@type": "Review",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-      "author": { "@type": "Person", "name": "Igor Petrovich" },
-      "reviewBody": "Очень доволен работой с Rentalsky. Заказывал автовышку для строительных работ — техника в отличном состоянии, доставка была точно в срок, а ребята помогли выбрать подходящий вариант под мои задачи. Общение было приятным и по делу, чувствовал себя уверенно. Рекомендую - всё прошло гладко и без заминок."
-    },
-    {
-      "@type": "Review",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-      "author": { "@type": "Person", "name": "Batyr Saparaliev" },
-      "reviewBody": "Искал срочно автовышку для ремонта кровли частного дома. Оперативно отозвались, помогли с подбором и быстро приехали. Все что нужно было сделали. В следующий раз буду обязательно обращаться!"
-    },
-    {
-      "@type": "Review",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-      "author": { "@type": "Person", "name": "Вероника Набокина" },
-      "reviewBody": "Обращались за автовышкой. Все понравилось. Будем сотрудничать дальше."
-    },
-    {
-      "@type": "Review",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-      "author": { "@type": "Person", "name": "Тиханский Альбрет Альбертович" },
-      "reviewBody": "Работаю с ними не первый год, никогда не подводили. Всегда вовремя приезжают и всю работу выполняют чётко. Цены всегда адекватные входят в положение и делают скидки. ВСЕМ РЕКОМЕНДУЮ."
-    },
-    {
-      "@type": "Review",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-      "author": { "@type": "Person", "name": "Маковчик Денис Дмитриевич" },
-      "reviewBody": "Хочу выразить Вам свою благодарность за автовышку-телескоп. Как мне доложили, машинка оказалась супер, даже люлька регулируется. Теперь будем только эту автовышку заказывать. Надеюсь на дальнейшее плодотворное сотрудничество с Вами. Спасибо."
-    },
-    {
-      "@type": "Review",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-      "author": { "@type": "Person", "name": "Сергей Комоско Вечаславович" },
-      "reviewBody": "Уже давно сотрудничаем с ООО «РенталСкай». Никогда не подводили, никогда проблем и накладок не было. Техника всегда подаётся без задержек. Что очень важно, они всегда на связи, в любое время можно позвонить или написать и заказать вышку. При этом цены демократичные. Можно договориться о скидке. Будем и дальше с ними сотрудничать."
-    },
-    {
-      "@type": "Review",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-      "author": { "@type": "Person", "name": "Трахневич Евгений Марьянович" },
-      "reviewBody": "Отличная организация для аренды автовышек! Профессиональный подход к клиентам, быстрая и своевременная подача и высокое качество техники обеспечивают комфорт в работе. Рекомендую всем!"
-    },
-    {
-      "@type": "Review",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-      "author": { "@type": "Person", "name": "Чумак Наталья Руслановна" },
-      "reviewBody": "Заказывали автовышку - остались довольны! Услуга предоставлена вовремя, все оперативно и качественно. Не пришлось ждать и нервничать, все сделали быстро и профессионально."
-    },
-    {
-      "@type": "Review",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-      "author": { "@type": "Person", "name": "Семенюк Даниил Иванович" },
-      "reviewBody": "Спасибо. С вышкой действительно быстрее и проще работать. Отдельная благодарность, что без задержек, все оперативно. И цена отличная. Буду обращаться теперь к вам постоянно."
-    },
-    {
-      "@type": "Review",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-      "author": { "@type": "Person", "name": "Александр Михеев" },
-      "reviewBody": "Обращался за автовышкой. Помогли с подбором и оперативно подали машину на объект. Рекомендуем."
-    },
-    {
-      "@type": "Review",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-      "author": { "@type": "Person", "name": "Масло Олег" }
+<?php
+    $localBusinessSchema = [
+        '@context' => 'https://schema.org',
+        '@type' => 'LocalBusiness',
+        'name' => $company['name'],
+        'telephone' => $company['phoneRaw'],
+        'image' => $company['image'],
+        'priceRange' => $company['priceRange'],
+        'address' => [
+            '@type' => 'PostalAddress',
+            'streetAddress' => $company['address']['streetAddress'],
+            'addressLocality' => $company['address']['addressLocality'],
+            'postalCode' => $company['address']['postalCode'],
+            'addressCountry' => $company['address']['addressCountry'],
+        ],
+        'aggregateRating' => [
+            '@type' => 'AggregateRating',
+            'ratingValue' => '5',
+            'bestRating' => '5',
+            'reviewCount' => '12',
+        ],
+    ];
+
+    if ($isFullReviewSchema) {
+        $localBusinessSchema['review'] = [
+            ['@type' => 'Review', 'reviewRating' => ['@type' => 'Rating', 'ratingValue' => '5', 'bestRating' => '5'], 'author' => ['@type' => 'Person', 'name' => 'Ivan Slatvinski'], 'reviewBody' => 'Отличный сервис! Машина исправная, оператор вежливый, приехали вовремя. Всё чётко и по делу. Рекомендую компанию как надежного подрядчика!'],
+            ['@type' => 'Review', 'reviewRating' => ['@type' => 'Rating', 'ratingValue' => '5', 'bestRating' => '5'], 'author' => ['@type' => 'Person', 'name' => 'Igor Petrovich'], 'reviewBody' => 'Очень доволен работой с Rentalsky. Заказывал автовышку для строительных работ — техника в отличном состоянии, доставка была точно в срок, а ребята помогли выбрать подходящий вариант под мои задачи. Общение было приятным и по делу, чувствовал себя уверенно. Рекомендую - всё прошло гладко и без заминок.'],
+            ['@type' => 'Review', 'reviewRating' => ['@type' => 'Rating', 'ratingValue' => '5', 'bestRating' => '5'], 'author' => ['@type' => 'Person', 'name' => 'Batyr Saparaliev'], 'reviewBody' => 'Искал срочно автовышку для ремонта кровли частного дома. Оперативно отозвались, помогли с подбором и быстро приехали. Все что нужно было сделали. В следующий раз буду обязательно обращаться!'],
+            ['@type' => 'Review', 'reviewRating' => ['@type' => 'Rating', 'ratingValue' => '5', 'bestRating' => '5'], 'author' => ['@type' => 'Person', 'name' => 'Вероника Набокина'], 'reviewBody' => 'Обращались за автовышкой. Все понравилось. Будем сотрудничать дальше.'],
+            ['@type' => 'Review', 'reviewRating' => ['@type' => 'Rating', 'ratingValue' => '5', 'bestRating' => '5'], 'author' => ['@type' => 'Person', 'name' => 'Тиханский Альбрет Альбертович'], 'reviewBody' => 'Работаю с ними не первый год, никогда не подводили. Всегда вовремя приезжают и всю работу выполняют чётко. Цены всегда адекватные входят в положение и делают скидки. ВСЕМ РЕКОМЕНДУЮ.'],
+            ['@type' => 'Review', 'reviewRating' => ['@type' => 'Rating', 'ratingValue' => '5', 'bestRating' => '5'], 'author' => ['@type' => 'Person', 'name' => 'Маковчик Денис Дмитриевич'], 'reviewBody' => 'Хочу выразить Вам свою благодарность за автовышку-телескоп. Как мне доложили, машинка оказалась супер, даже люлька регулируется. Теперь будем только эту автовышку заказывать. Надеюсь на дальнейшее плодотворное сотрудничество с Вами. Спасибо.'],
+            ['@type' => 'Review', 'reviewRating' => ['@type' => 'Rating', 'ratingValue' => '5', 'bestRating' => '5'], 'author' => ['@type' => 'Person', 'name' => 'Сергей Комоско Вечаславович'], 'reviewBody' => 'Уже давно сотрудничаем с ООО «РенталСкай». Никогда не подводили, никогда проблем и накладок не было. Техника всегда подаётся без задержек. Что очень важно, они всегда на связи, в любое время можно позвонить или написать и заказать вышку. При этом цены демократичные. Можно договориться о скидке. Будем и дальше с ними сотрудничать.'],
+            ['@type' => 'Review', 'reviewRating' => ['@type' => 'Rating', 'ratingValue' => '5', 'bestRating' => '5'], 'author' => ['@type' => 'Person', 'name' => 'Трахневич Евгений Марьянович'], 'reviewBody' => 'Отличная организация для аренды автовышек! Профессиональный подход к клиентам, быстрая и своевременная подача и высокое качество техники обеспечивают комфорт в работе. Рекомендую всем!'],
+            ['@type' => 'Review', 'reviewRating' => ['@type' => 'Rating', 'ratingValue' => '5', 'bestRating' => '5'], 'author' => ['@type' => 'Person', 'name' => 'Чумак Наталья Руслановна'], 'reviewBody' => 'Заказывали автовышку - остались довольны! Услуга предоставлена вовремя, все оперативно и качественно. Не пришлось ждать и нервничать, все сделали быстро и профессионально.'],
+            ['@type' => 'Review', 'reviewRating' => ['@type' => 'Rating', 'ratingValue' => '5', 'bestRating' => '5'], 'author' => ['@type' => 'Person', 'name' => 'Семенюк Даниил Иванович'], 'reviewBody' => 'Спасибо. С вышкой действительно быстрее и проще работать. Отдельная благодарность, что без задержек, все оперативно. И цена отличная. Буду обращаться теперь к вам постоянно.'],
+            ['@type' => 'Review', 'reviewRating' => ['@type' => 'Rating', 'ratingValue' => '5', 'bestRating' => '5'], 'author' => ['@type' => 'Person', 'name' => 'Александр Михеев'], 'reviewBody' => 'Обращался за автовышкой. Помогли с подбором и оперативно подали машину на объект. Рекомендуем.'],
+            ['@type' => 'Review', 'reviewRating' => ['@type' => 'Rating', 'ratingValue' => '5', 'bestRating' => '5'], 'author' => ['@type' => 'Person', 'name' => 'Масло Олег']],
+        ];
     }
-  ]
-}
-</script>
-<?php else: ?>
+?>
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "РенталСкай",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5",
-    "bestRating": "5",
-    "reviewCount": "12"
-  }
-}
+<?= json_encode($localBusinessSchema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) ?>
 </script>
-<?php endif; ?>

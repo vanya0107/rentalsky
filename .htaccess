@@ -1,4 +1,4 @@
-Options +FollowSymLinks
+Options +FollowSymLinks -Indexes
 AddDefaultCharset UTF-8
 RewriteEngine On
 RewriteBase /
@@ -44,6 +44,9 @@ RewriteRule ^about\.php$ /about [R=301,L]
 RewriteCond %{THE_REQUEST} /contacts\.php [NC]
 RewriteRule ^contacts\.php$ /contacts [R=301,L]
 
+RewriteCond %{THE_REQUEST} /catalog\.php [NC]
+RewriteRule ^catalog\.php$ /catalog [R=301,L]
+
 ####################################
 # 5) Убираем .php для всех остальных страниц
 ####################################
@@ -83,4 +86,8 @@ ErrorDocument 404 /404.php
     <FilesMatch "\.(js|css|png|jpg|jpeg|webp|svg|woff|woff2)$">
         Header set Cache-Control "public, max-age=31536000, immutable"
     </FilesMatch>
+
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
 </IfModule>

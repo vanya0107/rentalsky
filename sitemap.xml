@@ -4,6 +4,7 @@
     <!-- Главная -->
     <url>
         <loc>https://rentalsky.by/</loc>
+        <lastmod>2026-08-23</lastmod>
         <priority>1.0</priority>
         <changefreq>weekly</changefreq>
     </url>
@@ -11,6 +12,7 @@
     <!-- О компании -->
     <url>
         <loc>https://rentalsky.by/about</loc>
+        <lastmod>2026-08-23</lastmod>
         <priority>0.8</priority>
         <changefreq>monthly</changefreq>
     </url>
@@ -18,6 +20,7 @@
     <!-- Контакты -->
     <url>
         <loc>https://rentalsky.by/contacts</loc>
+        <lastmod>2026-08-23</lastmod>
         <priority>0.8</priority>
         <changefreq>monthly</changefreq>
     </url>
@@ -25,6 +28,7 @@
     <!-- Каталог -->
     <url>
         <loc>https://rentalsky.by/catalog</loc>
+        <lastmod>2026-08-23</lastmod>
         <priority>0.9</priority>
         <changefreq>monthly</changefreq>
     </url>
@@ -32,54 +36,63 @@
     <!-- Страницы автовышек -->
     <url>
         <loc>https://rentalsky.by/avtovishka-12m-dongfeng</loc>
+        <lastmod>2026-08-23</lastmod>
         <priority>0.9</priority>
         <changefreq>monthly</changefreq>
     </url>
 
     <url>
         <loc>https://rentalsky.by/avtovishka-18m-renault</loc>
+        <lastmod>2026-08-23</lastmod>
         <priority>0.9</priority>
         <changefreq>monthly</changefreq>
     </url>
 
     <url>
         <loc>https://rentalsky.by/avtovishka-22m-zil</loc>
+        <lastmod>2026-08-23</lastmod>
         <priority>0.9</priority>
         <changefreq>monthly</changefreq>
     </url>
 
     <url>
         <loc>https://rentalsky.by/avtovishka-25m-renault</loc>
+        <lastmod>2026-08-23</lastmod>
         <priority>0.9</priority>
         <changefreq>monthly</changefreq>
     </url>
 
     <url>
         <loc>https://rentalsky.by/avtovishka-28m-maz</loc>
+        <lastmod>2026-08-23</lastmod>
         <priority>0.9</priority>
         <changefreq>monthly</changefreq>
     </url>
 
     <url>
         <loc>https://rentalsky.by/avtovishka-28m-iveco</loc>
+        <lastmod>2026-08-23</lastmod>
         <priority>0.9</priority>
         <changefreq>monthly</changefreq>
     </url>
 
     <url>
         <loc>https://rentalsky.by/avtovishka-30m-maz</loc>
+        <lastmod>2026-08-23</lastmod>
         <priority>0.9</priority>
         <changefreq>monthly</changefreq>
     </url>
 
     <url>
         <loc>https://rentalsky.by/avtovishka-40m-mercedes</loc>
+        <lastmod>2026-08-23</lastmod>
         <priority>0.9</priority>
         <changefreq>monthly</changefreq>
     </url>
 
     <url>
         <loc>https://rentalsky.by/avtovishka-45m-mercedes</loc>
+        <lastmod>2026-08-23</lastmod>
         <priority>0.9</priority>
         <changefreq>monthly</changefreq>
     </url>

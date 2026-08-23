@@ -4,6 +4,7 @@
     <?php
         include('template/head.php');
         $page = 'contacts';
+        $company = include('template/data/company.php');
     ?>
     <meta name="description" content="Контактная информация РенталСкай. Телефоны, адрес, email, карта проезда. Аренда автовышек по Минску и всей Беларуси.">
     <meta name="keywords" content="контакты РенталСкай, заказать автовышку Минск">
@@ -24,7 +25,7 @@
     <div class="rs-contacts-form rs-block-bg">
         <div class="rs-container">
         <header>
-            <h1 class="rs-title rs-title-h2 rs-title-h2--band">Контакты</h1>
+            <h1 class="rs-title rs-title-h2 rs-title-h2--band">Контакты РенталСкай</h1>
         </header>
         <div class="rs-contacts-form__wrap">
             <div class="rs-contacts-form__info">
@@ -32,11 +33,11 @@
                     По любым вопросам свяжитесь с нами наиболее удобным из нижеперечисленных способов, и мы оперативно ответим Вам.
                 </p>
                 <p class="rs-contacts-form__label">По номеру телефона:</p>
-                <a href="tel:+375 (44) 788-94-81" class="rs-contacts-form__contact big-fs">
+                <a href="tel:<?= $company['phoneDisplay'] ?>" class="rs-contacts-form__contact big-fs">
                     <svg>
                         <use xlink:href="img/s-icons.svg#phone"></use>
                     </svg>
-                    <span>+375 (44) 788-94-81</span>
+                    <span><?= $company['phoneDisplay'] ?></span>
                 </a>
                 <p class="rs-contacts-form__label">Через любую социальную сеть:</p>
                 <div class="rs-contacts-form__social">
@@ -72,9 +73,7 @@
                     >
                     <p class="rs-contacts-form__err">Введите корректный номер телефона!</p>
                 </div>
-<!--                <div class="rs-contacts-form__captcha">-->
-<!--                    <div class="g-recaptcha" data-sitekey="6LfEl6UqAAAAAJUnVJj6U5mYEFYhybntwG1m-LfU"></div>-->
-<!--                </div>-->
+                <input type="text" name="website" value="" autocomplete="off" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;overflow:hidden;">
                 <button type="submit" class="rs-contacts-form__btn rs-btn rs-btn__orange">
                     Заказать звонок
                 </button>
@@ -87,9 +86,9 @@
         <header>
             <h2 class="rs-title rs-title-h2 rs-title-h2--band">Как нас найти</h2>
         </header>
-        <a href="https://www.google.com/maps/place/%D0%90%D1%80%D0%B5%D0%BD%D0%B4%D0%B0+%D0%B0%D0%B2%D1%82%D0%BE%D0%B2%D1%8B%D1%88%D0%BA%D0%B8+%7C+%D0%9E%D0%9E%D0%9E+%22%D0%A0%D0%B5%D0%BD%D1%82%D0%B0%D0%BB%D0%A1%D0%BA%D0%B0%D0%B9%22/@53.9259494,27.4491679,16.75z/data=!4m16!1m9!3m8!1s0xa3d734646122f877:0xc5138dfa36872c0f!2z0JDRgNC10L3QtNCwINCw0LLRgtC-0LLRi9GI0LrQuCB8INCe0J7QniAi0KDQtdC90YLQsNC70KHQutCw0Lki!8m2!3d53.9258763!4d27.4514404!9m1!1b1!16s%2Fg%2F11ww3d7q1_!3m5!1s0xa3d734646122f877:0xc5138dfa36872c0f!8m2!3d53.9258763!4d27.4514404!16s%2Fg%2F11ww3d7q1_" target="_blank" rel="noopener" class="rs-contacts-map__address">
+        <a href="<?= $company['mapsUrl'] ?>" target="_blank" rel="noopener" class="rs-contacts-map__address">
             <svg><use xlink:href="img/s-icons.svg#pin"></use></svg>
-            г. Минск, пр-д Масюковщина, д. 4, каб. 36
+            <?= $company['addressShortDisplay'] ?>
         </a>
         <div class="rs-contacts-map__frame">
             <iframe

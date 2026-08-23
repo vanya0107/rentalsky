@@ -48,7 +48,7 @@
             <img src="img/hero/catalog.webp" alt="Каталог автовышек РенталСкай" width="1920" height="200" fetchpriority="high">
         </picture>
         <div class="rs-hero__wrap rs-container">
-            <h1 class="rs-hero__title">Каталог</h1>
+            <h1 class="rs-hero__title">Каталог автовышек РенталСкай</h1>
         </div>
     </div>
     <div class="rs-block-m-bot rs-block-bg rs-block-bg--gray">

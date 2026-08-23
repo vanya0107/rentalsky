@@ -37,6 +37,7 @@
                 >
                 <p class="rs-popup-form__err">Введите корректный email!</p>
             </div>
+            <input type="text" name="website" value="" autocomplete="off" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;overflow:hidden;">
             <button type="submit" class="rs-popup-form__btn rs-btn rs-btn__orange">
                 Заказать звонок
             </button>

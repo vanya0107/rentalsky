@@ -52,7 +52,7 @@ Problem: homepage ranks great for generic queries ("аренда автовыш�
 ## Conventions to preserve, not "fix"
 
 - `.rs-text-hidden` (`display:none`) — do not change its CSS implementation; a visually-hidden rewrite was explicitly rejected. To hide SEO text visually, add/remove the class, don't touch the rule.
-- **Client does not want the word "аренда" (rental) in `<title>`/H1 of the 9 model pages** (`avtovishka.php`). Explicit client preference, not up for debate — find other ways to signal rental intent (price, "с оператором", synonyms) if needed. Body copy (`seoText`, FAQ) is not restricted by this — it just happens to not use the word today either.
+- **Client does not want the word "аренда" (rental) shown visually in the H1 of the 9 model pages** (`avtovishka.php`). This applies ONLY to the visible H1 — `<title>`/og:title/twitter:title (`headTitle` field) and body copy (`seoText`, FAQ) are NOT restricted and may use the word freely. Explicit client preference, not up for debate. (Corrected 2026-08-23 — previously mis-recorded here as also covering `<title>`; don't repeat that mistake.)
 - **Don't invent unverified technical/quantitative claims in copy** (e.g. "подходит для 4-6 этажей" without a source). Only state numbers that come from `tableParams`/data file fields, or write qualitatively without a specific number when we don't have a verified fact. Caught once already — the user is a stickler for not misleading site visitors on factual specs.
 
 ## Commands

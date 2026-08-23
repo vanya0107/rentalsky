@@ -9,20 +9,24 @@
         <?php endif; ?>
     <?php endforeach; ?>
 </nav>
+<?php
+    $breadcrumbSchema = [
+        '@context' => 'https://schema.org',
+        '@type' => 'BreadcrumbList',
+        'itemListElement' => array_map(function ($crumb, $i) {
+            $listItem = [
+                '@type' => 'ListItem',
+                'position' => $i + 1,
+                'name' => $crumb['label'],
+            ];
+            if (isset($crumb['url'])) {
+                $listItem['item'] = 'https://rentalsky.by' . $crumb['url'];
+            }
+            return $listItem;
+        }, $breadcrumbs, array_keys($breadcrumbs)),
+    ];
+?>
 <script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-        <?php foreach ($breadcrumbs as $i => $crumb): ?>
-        {
-            "@type": "ListItem",
-            "position": <?= $i + 1 ?>,
-            "name": "<?= $crumb['label'] ?>"<?php if (isset($crumb['url'])): ?>,
-            "item": "https://rentalsky.by<?= $crumb['url'] ?>"<?php endif; ?>
-        }<?= $i < $last ? ',' : '' ?>
-        <?php endforeach; ?>
-    ]
-}
+<?= json_encode($breadcrumbSchema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) ?>
 </script>
 <?php endif; ?>

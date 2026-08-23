@@ -1,3 +1,4 @@
+<?php $company = include __DIR__ . '/data/company.php'; ?>
 <header class="rs-header">
     <div class="rs-header__wrap rs-container">
         <?php if(isset($page) && $page == 'index') { ?>
@@ -29,7 +30,9 @@
                 <p class="active">Контакты</p>
             <?php } else { ?>
                 <a href="/contacts">Контакты</a>
-                <a href="#reviews">Отзывы</a>
+                <?php if (!isset($page) || $page != 'catalog') { ?>
+                    <a href="#reviews">Отзывы</a>
+                <?php } ?>
             <?php } ?>
         </nav>
         <div class="rs-header__contacts">
@@ -38,11 +41,11 @@
                     <use xlink:href="img/s-icons.svg#instagram"></use>
                 </svg>
             </a>
-            <a href="tel:+375 (44) 788-94-81" aria-label="Позвонить в РенталСкай">
+            <a href="tel:<?= $company['phoneDisplay'] ?>" aria-label="Позвонить в РенталСкай">
                 <svg>
                     <use xlink:href="img/s-icons.svg#phone"></use>
                 </svg>
-                <span>+375 (44) 788-94-81</span>
+                <span><?= $company['phoneDisplay'] ?></span>
             </a>
         </div>
         <div class="rs-header__toggle" data-toggle-active=".rs-header__menu"><div></div><div></div><div></div></div>

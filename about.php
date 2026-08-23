@@ -27,7 +27,7 @@
             <img src="img/hero/about.webp" alt="РенталСкай — о компании" width="1920" height="200" fetchpriority="high">
         </picture>
         <div class="rs-hero__wrap rs-container">
-            <h1 class="rs-hero__title">О нас</h1>
+            <h1 class="rs-hero__title">О компании РенталСкай</h1>
         </div>
     </div>
     <div class="rs-block-m-bot rs-block-bg rs-block-bg--gray">
@@ -78,6 +78,18 @@
             </div>
         </div>
     </section>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      "name": "Автовышки РенталСкай в работе",
+      "description": "Видео-подборка кадров работы автовышек РенталСкай на разных объектах.",
+      "thumbnailUrl": "https://rentalsky.by/img/poster.png",
+      "contentUrl": "https://rentalsky.by/video/1.mp4",
+      "duration": "PT1M58S",
+      "uploadDate": "2025-01-28T10:42:51+00:00"
+    }
+    </script>
     <section class="rs-contacts-form rs-block-m-bot rs-block-bg rs-block-bg--gray">
         <div class="rs-container">
             <header>

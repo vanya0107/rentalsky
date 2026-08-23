@@ -42,6 +42,10 @@ $catalogSlider = $car['catalogSlider'];
         'image' => 'https://rentalsky.by/' . $car['previewImg'][0],
         'model' => $car['model'],
         'sku' => $car['catalogSlider'],
+        'brand' => [
+            '@type' => 'Brand',
+            'name' => explode(' ', $car['tableParams']['base'][1])[0],
+        ],
         'additionalProperty' => array_map(function ($p) {
             return [
                 '@type' => 'PropertyValue',
@@ -119,7 +123,7 @@ $catalogSlider = $car['catalogSlider'];
                 <div class="rs-avtovishka__graph">
                     <p class="rs-avtovishka__graph_title">Рабочая зона</p>
                     <p class="rs-avtovishka__graph_img" data-toggle-active=".rs-avtovishka__graph">
-                        <img src="<?php echo $car['graphImg']; ?>" alt="">
+                        <img src="<?php echo $car['graphImg']; ?>" alt="<?php echo 'Диаграмма рабочей зоны автовышки ' . $car['name'] . ' ' . $car['model'] . ': высота подъёма ' . $car['tableParams']['height'][1] . ', вылет стрелы ' . $car['tableParams']['horizontal'][1]; ?>">
                     </p>
                     <button type="button" class="rs-avtovishka__graph_btn rs-btn rs-btn__orange"
                             data-popup=".rs-popup-form.callback">
